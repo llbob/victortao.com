@@ -1,0 +1,16 @@
+# dotenv environment variable files
+.env
+.env*
+
+# vscode
+.vscode/
+
+# ignore bash script folder
+static/bash/
+
+# ignore the _fresh folder
+_fresh/
+
+# ignore the github folder
+.github/
+.github/workflows/
