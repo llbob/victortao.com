@@ -16,7 +16,7 @@ export const handler: Handlers<CV> = {
 export default function CV({ data }: PageProps<CV>) {
   return (
     <MainLayout>
-      <div class="bg-white">
+      <div class="">
         <div class="max-w-3xl space-y-8">
           <p class="mb-4">{data.subtitle}</p>
           {data.sections.map((section, index) => (

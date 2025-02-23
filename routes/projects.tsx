@@ -21,7 +21,7 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
   
   return (
     <MainLayout>
-      <div class="bg-white">
+      <div class="">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {data.map((project) => (
             <div class="mb-16" key={project.id}>

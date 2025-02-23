@@ -16,7 +16,7 @@ export const handler: Handlers<Press> = {
 export default function PressPage({ data }: PageProps<Press>) {
   return (
     <MainLayout>
-      <div class="bg-white">
+      <div class="">
         <div class="max-w-3xl space-y-8">
           {data.items.map((item, index) => (
             <p key={index}>

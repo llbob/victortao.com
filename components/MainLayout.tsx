@@ -8,7 +8,7 @@ export function MainLayout({ children }: { children: JSX.Element }) {
       <head>
         <StripeScript />
       </head>
-      <body class="font-sans leading-relaxed">
+      <body class="font-sans leading-relaxed bg-backgroundColor">
         <div class="max-w-none mx-4 my-4">
           <a href="/" class="block mb-2 md:mb-4 lg:mb-8">
             <span class="text-xl font-serif hover:underline">Victor Tao</span>

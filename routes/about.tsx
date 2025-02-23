@@ -16,7 +16,7 @@ export const handler: Handlers<About> = {
 export default function About({ data }: PageProps<About>) {
   return (
     <MainLayout>
-      <div class="bg-white">
+      <div class="">
         <div class="max-w-3xl space-y-8">
           {data.paragraphs.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
@@ -26,7 +26,7 @@ export default function About({ data }: PageProps<About>) {
               Link to CV
             </a>
           </p>
-          <img class="w-full h-auto rounded" src={data.imageUrl} alt="..." />
+          <img class="w-full h-auto" src={data.imageUrl} alt="..." />
         </div>
       </div>
     </MainLayout>

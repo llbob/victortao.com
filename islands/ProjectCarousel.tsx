@@ -35,7 +35,7 @@ export default function ProjectCarousel({ project, showNavigation = true }: Proj
   }, []);
 
   return (
-    <div className="relative overflow-hidden rounded-lg shadow-lg mb-4" ref={carouselRef} tabIndex={0}>
+    <div className="relative overflow-hidden shadow-lg mb-4" ref={carouselRef} tabIndex={0}>
       <img
         src={project.images[currentImageIndex.value]}
         alt={`${project.title} image ${currentImageIndex.value + 1}`}
@@ -44,7 +44,7 @@ export default function ProjectCarousel({ project, showNavigation = true }: Proj
       {showNavigation && (
         <div className="absolute inset-0 flex items-center justify-between p-4">
           <button
-            className="p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 focus:bg-opacity-50 focus:outline-none transition-colors duration-300"
+            className="p-2 bg-black bg-opacity-30 text-white hover:bg-opacity-50 focus:bg-opacity-50 focus:outline-none transition-colors duration-300"
             onClick={previousSlide}
             aria-label="Previous image"
           >
@@ -53,7 +53,7 @@ export default function ProjectCarousel({ project, showNavigation = true }: Proj
             </svg>
           </button>
           <button
-            className="p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 focus:bg-opacity-50 focus:outline-none transition-colors duration-300"
+            className="p-2 bg-black bg-opacity-30 text-white hover:bg-opacity-50 focus:bg-opacity-50 focus:outline-none transition-colors duration-300"
             onClick={nextSlide}
             aria-label="Next image"
           >
@@ -67,7 +67,7 @@ export default function ProjectCarousel({ project, showNavigation = true }: Proj
         {project.images.map((_, index) => (
           <button
             key={index}
-            className={`w-2 h-2 mx-1 rounded-full transition-colors duration-300 ${
+            className={`w-2 h-2 mx-1 transition-colors duration-300 ${
               index === currentImageIndex.value ? 'bg-white' : 'bg-white bg-opacity-50'
             }`}
             onClick={() => {
