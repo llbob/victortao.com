@@ -10,6 +10,9 @@
   </a>
 </div>
 
+# This is a portfolio page for Victor Tao. It's based off of a boilerplate portfolio site [Deno Fresh Portfolio](https://github.com/llbob/deno-fresh-portfolio) built by myself, which is integrated with [PagesCMS](https://pagescms.org/) for easy content management.
+
+_____________
 
 # A Deno Fresh minimal portfolio boilerplate integrated with PagesCMS for easy content management
 This is a boilerplate for a portfolio site, built with Deno and Fresh inspired by the minimal aestherics of the indexhibit theme, implemented currently with a 'flat file'-like structure set up with frontmatter to be used with [PagesCMS](https://pagescms.org/).

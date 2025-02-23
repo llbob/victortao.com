@@ -11,7 +11,7 @@ export function MainLayout({ children }: { children: JSX.Element }) {
       <body class="font-sans leading-relaxed">
         <div class="max-w-none mx-4 my-4">
           <a href="/" class="block mb-2 md:mb-4 lg:mb-8">
-            <span class="text-xl font-serif hover:underline">Deno Fresh Indexhibit</span>
+            <span class="text-xl font-serif hover:underline">Victor Tao</span>
           </a>
           <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <nav class="md:col-span-1">
