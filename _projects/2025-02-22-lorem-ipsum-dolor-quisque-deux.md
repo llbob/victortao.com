@@ -1,6 +1,6 @@
 ---
 title: Lorem Ipsum Dolor Quisque Deux
-year: 1910
+year: 2023
 headerImageUrl: /assets/placeholder/image12.jpg
 carouselImages:
   - url: /assets/placeholder/image15.jpg
