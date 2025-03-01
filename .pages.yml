@@ -118,6 +118,11 @@ content:
       - name: year
         label: Year
         type: number
+      - name: headerImageUrl
+        label: Project Image
+        type: image
+        list: false
+        description: "The project header image"
       - name: externalUrl
         label: External URL
         type: string
