@@ -26,11 +26,11 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
           {data.map((project) => (
             <div class="mb-16" key={project.id}>
               <a href={`/projects/${project.id}`}>
-                <p class="text-xl font-serif">{project.title}</p>
-                <p class="text-xl font-serif mb-2">Year: {project.year}</p>
+                <p class="text-xl font-sans">{project.title}</p>
+                <p class="text-xl font-sans mb-2">Year: {project.year}</p>
                 <img
                   class="projects-image"
-                  src={project.images[0]}
+                  src={project.images[0].url}
                   alt={project.title}
                 />
               </a>

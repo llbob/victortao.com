@@ -6,14 +6,17 @@ export default {
     theme: {
       extend: {
         fontFamily: {
-          sans: ['"Noto Sans"', 'sans-serif'],
+          sans: ['Object Sans', 'sans-serif'],
           serif: ['Domine', 'serif'],
+        },
+        colors: {
+          backgroundColor: '#F8F8F8',
         },
       },
     },
     preflight: {
       body: {
-        fontFamily: '"Noto Sans", sans-serif',
+        fontFamily: '"Object Sans", sans-serif',
         fontOpticalSizing: 'auto',
         fontVariationSettings: '"wdth" 100',
         backgroundColor: '#F8F8F8',

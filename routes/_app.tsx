@@ -11,7 +11,27 @@ export default function App({ Component }: PageProps) {
         <title>Victor Tao</title>
         <style>
           {`
-            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Domine:wght@400..700&display=swap');
+            @font-face {
+              font-family: 'Object Sans';
+              src: url('/fonts/ObjectSans/ObjectSans-Regular.woff2') format('woff2');
+              font-weight: 400;
+              font-style: normal;
+              font-display: swap;
+            }
+            @font-face {
+              font-family: 'Object Sans';
+              src: url('/fonts/ObjectSans/ObjectSans-Medium.woff2') format('woff2');
+              font-weight: 500;
+              font-style: normal;
+              font-display: swap;
+            }
+            @font-face {
+              font-family: 'Object Sans';
+              src: url('/fonts/ObjectSans/ObjectSans-Bold.woff2') format('woff2');
+              font-weight: 700;
+              font-style: normal;
+              font-display: swap;
+            }
           `}
         </style>
       </head>

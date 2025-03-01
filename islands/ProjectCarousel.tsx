@@ -34,49 +34,54 @@ export default function ProjectCarousel({ project, showNavigation = true }: Proj
     return () => carouselRef.current?.removeEventListener("keydown", keydownHandler);
   }, []);
 
+  const currentImage = project.images[currentImageIndex.value];
+
   return (
-    <div className="relative overflow-hidden shadow-lg mb-4" ref={carouselRef} tabIndex={0}>
-      <img
-        src={project.images[currentImageIndex.value]}
-        alt={`${project.title} image ${currentImageIndex.value + 1}`}
-        className="w-full h-auto object-cover transition-opacity duration-300"
-      />
-      {showNavigation && (
-        <div className="absolute inset-0 flex items-center justify-between p-4">
-          <button
-            className="p-2 bg-black bg-opacity-30 text-white hover:bg-opacity-50 focus:bg-opacity-50 focus:outline-none transition-colors duration-300"
-            onClick={previousSlide}
-            aria-label="Previous image"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button
-            className="p-2 bg-black bg-opacity-30 text-white hover:bg-opacity-50 focus:bg-opacity-50 focus:outline-none transition-colors duration-300"
-            onClick={nextSlide}
-            aria-label="Next image"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+    <div className="relative flex flex-col h-[650px] md:h-[700px]">
+      <div className="relative flex-grow w-auto overflow-hidden" ref={carouselRef} tabIndex={0}>
+        <div className="h-full w-full flex items-center justify-center">
+          <div className="relative">
+            <img
+              src={currentImage.url}
+              alt={currentImage.caption || `${project.title} image ${currentImageIndex.value + 1}`}
+              className="max-h-[650px] w-full object-contain transition-opacity duration-300"
+            />
+            <div className="absolute bottom-3 right-3 flex justify-center">
+            <p className="text-xs text-black bg-backgroundColor rounded-full px-2 py-1">({currentImageIndex.value + 1} / {project.images.length})</p>
+            </div>
+          </div>
         </div>
-      )}
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center">
-        {project.images.map((_, index) => (
-          <button
-            key={index}
-            className={`w-2 h-2 mx-1 transition-colors duration-300 ${
-              index === currentImageIndex.value ? 'bg-white' : 'bg-white bg-opacity-50'
-            }`}
-            onClick={() => {
-              currentImageIndex.value = index;
-            }}
-            aria-label={`Go to image ${index + 1}`}
-          />
-        ))}
+        {showNavigation && (
+          <div className="absolute inset-0 flex items-center justify-between p-4">
+            <button
+              className="p-2 text-black focus:outline-none transition-colors duration-300"
+              onClick={previousSlide}
+              aria-label="Previous image"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              className="p-2 text-black focus:outline-none transition-colors duration-300"
+              onClick={nextSlide}
+              aria-label="Next image"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
+      {
+        currentImage.caption && (
+          <div className="text-black text-center p-4 mt-auto">
+            {/* place in front the number of the image */}
+            <p className="text-sm">({currentImageIndex.value + 1}.) {currentImage.caption}</p>
+          </div>
+        )
+      }
     </div>
   );
 }

@@ -24,10 +24,11 @@ export default function ProjectPage({ data }: PageProps<Project>) {
   return (
     <MainLayout>
       <div class="max-w-3xl">
+        <img src={data.images[0].url} alt={data.title} class="w-full h-auto mb-4" />
+        <p class="text-3xl font-sans mb-2">{data.title}</p>
+        <p class="text-2xl font-sans mb-4">Year: {data.year}</p>
+        <div class="mb-4" dangerouslySetInnerHTML={{ __html: data.content }} />
         <ProjectCarousel project={data} />
-        <p class="text-3xl font-serif mb-2">{data.title}</p>
-        <p class="text-2xl font-serif mb-4">Year: {data.year}</p>
-        <div dangerouslySetInnerHTML={{ __html: data.content }} />
       </div>
     </MainLayout>
   );
