@@ -89,11 +89,7 @@ content:
       - name: externalUrl
         label: External URL
         type: string
-        description: "If provided, clicking on this article will navigate to this external URL instead of the article page"
-        pattern:
-          regex: '^https?://.*$'
-          message: "Please enter a valid URL starting with http:// or https://"
-          required: false
+        description: "If provided, clicking on this article will navigate to this external URL instead of the article page. Please enter a valid URL starting with http:// or https://"
         required: false
       - name: body
         label: Content
