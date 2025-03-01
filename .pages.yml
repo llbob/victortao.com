@@ -5,7 +5,7 @@ media:
 
 content:
   - name: projects
-    label: Projects
+    label: Udstillinger
     type: collection
     path: _projects
     view:
@@ -49,6 +49,110 @@ content:
         description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
         options:
           format: html
+
+  - name: articles
+    label: Artikler
+    type: collection
+    path: _articles
+    view:
+      fields: [ title, date, platform, externalUrl ]
+      primary: title
+      sort: [ date, title ]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        description: "Needs to be unique from title of any other article, otherwise pages will collide."
+        required: true
+      - name: date
+        label: Publication Date
+        type: date
+        required: true
+      - name: platform
+        label: Media Platform
+        type: string
+        description: "Name of the publication or media platform"
+      - name: platformUrl
+        label: Platform URL
+        type: string
+        pattern:
+          regex: '^https?://.*$'
+          message: "Please enter a valid URL starting with http:// or https://"
+      - name: headerImageUrl
+        label: Article Image
+        type: image
+        list: false
+        description: "The article header image"
+      - name: externalUrl
+        label: External URL
+        type: string
+        description: "If provided, clicking on this article will navigate to this external URL instead of the article page"
+        pattern:
+          regex: '^https?://.*$'
+          message: "Please enter a valid URL starting with http:// or https://"
+      - name: body
+        label: Content
+        type: rich-text
+        description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
+        options:
+          format: html
+
+  - name: cultprojects
+    label: Kulturprojekter
+    type: collection
+    path: _cultprojects
+    view:
+      fields: [ title, year, externalUrl ]
+      primary: title
+      sort: [ year, title ]
+      default:
+        sort: year
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        description: "Needs to be unique from title of any other project, otherwise pages will collide."
+        required: true
+      - name: year
+        label: Year
+        type: number
+      - name: headerImageUrl
+        label: Project Image
+        type: image
+        list: false
+        description: "The project header image"
+      - name: externalUrl
+        label: External URL
+        type: string
+        description: "If provided, clicking on this project will navigate to this external URL instead of the project page"
+        pattern:
+          regex: '^https?://.*$'
+          message: "Please enter a valid URL starting with http:// or https://"
+      - name: body
+        label: Content
+        type: rich-text
+        description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
+        options:
+          format: html
+      - name: carouselImages
+        label: Project Images
+        type: object
+        list: true
+        fields:
+          - name: url
+            label: Image URL
+            type: image
+            required: true
+          - name: caption
+            label: Image Caption
+            type: string
+            description: "Optional caption for this image"
+        description: "Project images for carousel - carousel is placed at the page bottom"
+
 
   - name: about
     label: About
