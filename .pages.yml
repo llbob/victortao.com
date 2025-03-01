@@ -156,9 +156,6 @@ content:
     path: about.md
     format: yaml-frontmatter
     fields:
-      - name: subtitle
-        label: Subtitle
-        type: string
       - name: sections
         label: CV Sections
         type: object
