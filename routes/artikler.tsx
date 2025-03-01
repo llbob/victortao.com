@@ -18,23 +18,28 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
       </MainLayout>
     );
   }
-  
+
   return (
     <MainLayout>
       <div class="max-w-3xl">
         <div class="grid grid-cols-1 gap-8">
           {data.map((article) => (
-            <div class="mb-8" key={article.id}>
+            <div class="mb-8 group" key={article.id}>
               {article.externalUrl ? (
-                <a href={article.externalUrl} target="_blank" rel="noopener noreferrer">
-                  <p class="text-xl font-sans">{article.title}</p>
-                  <p class="text-lg font-sans mb-2">
+                <a href={article.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-green-500 block">
+                  <p class="text-xs">Artikel</p>
+                  <p class="text-xl font-sans">
+                    <span class="relative overflow-hidden inline-block">
+                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</span>
+                    </span>
+                  </p>
+                  <p class="text-lg font-sans mb-2 flex justify-between">
                     <span class="link">
                       {new Date(article.date).toLocaleDateString('no', {
                         day: '2-digit',
                         month: '2-digit',
                         year: 'numeric',
-                      }).replace(/\//g, '.')} 
+                      }).replace(/\//g, '.')}
                     </span>
                     <span class="text-gray-400">
                       {article.platform && ` • ${article.platform}`}
@@ -49,18 +54,23 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                   )}
                 </a>
               ) : (
-                <a href={`/artikler/${article.id}`}>
-                  <p class="text-xl font-sans">{article.title}</p>
-                    <p class="text-lg font-sans mb-2">
-                      <span class="link">
-                        {new Date(article.date).toLocaleDateString('no', {
-                          day: '2-digit',
-                          month: '2-digit',
-                          year: 'numeric',
-                        }).replace(/\//g, '.')} 
-                      </span>
-                    <span class="text-gray-400">
-                      {article.platform && ` • ${article.platform}`}
+                <a href={`/artikler/${article.id}`} class="hover:text-green-500 block">
+                  <p class="text-xs">Artikel</p>
+                  <p class="text-sm font-sans pt-1">
+                    <span class="">
+                      {article.platform && ` ${article.platform}`}
+                    </span>
+                    <span class="">&nbsp;-&nbsp;
+                      {new Date(article.date).toLocaleDateString('no', {
+                        day: '2-digit',
+                        month: '2-digit',
+                        year: 'numeric',
+                      }).replace(/\//g, '.')}
+                    </span>
+                  </p>
+                  <p class="text-xl font-sans">
+                    <span class="relative overflow-hidden inline-block">
+                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</span>
                     </span>
                   </p>
                   {article.headerImageUrl && (

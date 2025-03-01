@@ -10,9 +10,48 @@ export default {
           serif: ['Domine', 'serif'],
         },
         colors: {
-          backgroundColor: '#F8F8F8',
-          activeColor: '#D8BFD8',
+          backgroundColor: '#EEE',
+          activeColor: '#000',
+          white: '#EEE',
         },
+        keyframes: {
+          bounceAround: {
+            '0%, 100%': { transform: 'translateX(0) rotate(0deg)' },
+            '10%': { transform: 'translateX(-10px) rotate(-2deg)' },
+            '30%': { transform: 'translateX(5px) rotate(1deg)' },
+            '50%': { transform: 'translateY(-5px)' },
+            '70%': { transform: 'translateX(-5px) scale(1.1)' },
+            '90%': { transform: 'translateX(3px) scale(0.95)' },
+          },
+          nameChange: {
+            '0%, 24%, 100%': { opacity: 1 },
+            '25%, 99%': { opacity: 0 },
+          },
+          nameChangeDelay: {
+            '0%, 24%, 49%, 100%': { opacity: 0 },
+            '25%, 48%': { opacity: 1 },
+          },
+          nameChangeDelay2: {
+            '0%, 49%, 74%, 100%': { opacity: 0 },
+            '50%, 73%': { opacity: 1 },
+          },
+          nameChangeDelay3: {
+            '0%, 74%, 99%': { opacity: 0 },
+            '75%, 98%': { opacity: 1 },
+          },
+          textScroll: {
+            '0%': { transform: 'translateX(0%)' },
+            '100%': { transform: 'translateX(-100%)' }
+          },
+        },
+        animation: {
+          'bounce-around': 'bounceAround 16s ease-in-out infinite',
+          'name-change': 'nameChange 16s ease-in-out infinite',
+          'name-change-delay': 'nameChangeDelay 16s ease-in-out infinite',
+          'name-change-delay-2': 'nameChangeDelay2 16s ease-in-out infinite',
+          'name-change-delay-3': 'nameChangeDelay3 16s ease-in-out infinite',
+          'text-scroll': 'textScroll 10s linear infinite',
+        }        
       },
     },
     preflight: {

@@ -24,10 +24,16 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
       <div class="max-w-3xl">
         <div class="grid grid-cols-1 gap-8">
           {data.map((project) => (
-            <div class="mb-8" key={project.id}>
+            <div class="mb-8 group" key={project.id}>
               {project.externalUrl ? (
-                <a href={project.externalUrl} target="_blank" rel="noopener noreferrer">
-                  <p class="text-xl font-sans">{project.title}, {project.year}</p>
+                <a href={project.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-green-500 block">
+                  <p class="text-xs">Kulturprojekt</p>
+                  <p class="text-xl font-sans flex justify-between pt-1">
+                    <span class="relative overflow-hidden inline-block">
+                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
+                    </span>
+                    <span class="">{project.year}</span>
+                  </p>
                   {project.headerImageUrl && (
                     <img
                       class="w-full h-auto object-cover mt-2"
@@ -37,8 +43,14 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
                   )}
                 </a>
               ) : (
-                <a href={`/kulturprojekter/${project.id}`}>
-                  <p class="text-xl font-sans">{project.title}, {project.year}</p>
+                <a href={`/kulturprojekter/${project.id}`} class="hover:text-green-500 block">
+                  <p class="text-xs">Kulturprojekt</p>
+                  <p class="text-xl font-sans flex justify-between pt-1">
+                    <span class="relative overflow-hidden inline-block">
+                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
+                    </span>
+                    <span class="">{project.year}</span>
+                  </p>
                   {project.headerImageUrl && (
                     <img
                       class="w-full h-auto object-cover mt-2"

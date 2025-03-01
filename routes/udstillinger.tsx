@@ -26,9 +26,14 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
         <div class="md:hidden">
           <div class="grid grid-cols-1 gap-8">
             {data.map((project) => (
-              <div class="mb-8" key={project.id}>
-                <a href={`/projects/${project.id}`}>
-                  <p class="text-xl font-sans truncate">{project.title}</p>
+              <div class="mb-8 group" key={project.id}>
+                <a href={`/projects/${project.id}`} class="hover:text-green-500 block">
+                  <p class="text-xs">Udstilling</p>
+                  <p class="text-xl font-sans">
+                    <span class="relative overflow-hidden inline-block">
+                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
+                    </span>
+                  </p>
                   <p class="text-xl font-sans mb-2">År: {project.year}</p>
                   <img
                     class="w-full h-[400px] object-cover transition-all duration-300 hover:opacity-90"
@@ -47,12 +52,17 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
             <div class="flex space-x-8 pb-8">
               {data.map((project) => (
                 <div 
-                  class="flex-none w-[40vh]" 
+                  class="flex-none w-[40vh] group" 
                   key={project.id}
                 >
-                  <a href={`/projects/${project.id}`}>
+                  <a href={`/projects/${project.id}`} class="hover:text-green-500 block">
                     <div class="h-full">
-                      <p class="text-xl font-sans truncate">{project.title}</p>
+                      <p class="text-xs">Udstilling</p>
+                      <p class="text-xl font-sans">
+                        <span class="relative overflow-hidden inline-block">
+                          <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
+                        </span>
+                      </p>
                       <p class="text-xl font-sans mb-2">År: {project.year}</p>
                       <img
                         class="min-w-[40vh] min-h-[70vh] h-full object-cover transition-all duration-300 hover:opacity-90"
@@ -65,6 +75,53 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
               ))}
             </div>
           </div>
+          
+          {/* Scroll indicator */}
+          <div class="mt-4 flex justify-center items-center">
+            <div class="w-full max-w-md h-1 bg-gray-200 rounded-full overflow-hidden">
+              <div 
+                id="scrollIndicator" 
+                class="h-full bg-black rounded-full transition-all duration-300"
+                style="width: 0%"
+              ></div>
+            </div>
+            <div id="scrollCounter" class="ml-4 text-sm font-mono">
+              (0/{data.length})
+            </div>
+          </div>
+          
+          {/* Script to update scroll indicator */}
+          <script dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener('DOMContentLoaded', () => {
+                const scrollContainer = document.querySelector('.overflow-x-auto');
+                const indicator = document.getElementById('scrollIndicator');
+                const counter = document.getElementById('scrollCounter');
+                const totalItems = ${data.length};
+                
+                if (scrollContainer && indicator && counter) {
+                  scrollContainer.addEventListener('scroll', () => {
+                    const scrollLeft = scrollContainer.scrollLeft;
+                    const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+                    const scrollPercentage = (scrollLeft / maxScroll) * 100;
+                    
+                    // Update the indicator width
+                    indicator.style.width = scrollPercentage + '%';
+                    
+                    // Calculate current item based on scroll percentage
+                    // This ensures we reach the last item when fully scrolled
+                    const currentItem = Math.min(
+                      Math.round((scrollPercentage / 100) * (totalItems - 1)),
+                      totalItems - 1
+                    );
+                    
+                    // Update the counter text
+                    counter.textContent = '(' + (currentItem + 1) + '/' + totalItems + ')';
+                  });
+                }
+              });
+            `
+          }} />
         </div>
       </div>
     </MainLayout>

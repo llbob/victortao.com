@@ -43,7 +43,7 @@ export default function ContactPage({ data }: PageProps<ContactPageData>) {
                 <p class="text-md font-sans">
                   <a 
                     href={`mailto:${contact.email}`} 
-                    class="break-words text-md link"
+                    class="break-words text-md text-white"
                   >
                     {contact.email}
                   </a>
@@ -61,7 +61,7 @@ export default function ContactPage({ data }: PageProps<ContactPageData>) {
                       target="_blank" 
                       rel="noopener noreferrer" 
                       aria-label="LinkedIn" 
-                      class="link"
+                      class="text-white"
                     >
                       LinkedIn
                     </a>
@@ -72,7 +72,7 @@ export default function ContactPage({ data }: PageProps<ContactPageData>) {
                       target="_blank" 
                       rel="noopener noreferrer" 
                       aria-label="Instagram" 
-                      class="link"
+                      class="text-white"
                     >
                       Instagram
                     </a>
