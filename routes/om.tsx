@@ -7,7 +7,7 @@ export const handler: Handlers<CV> = {
   async GET(_req, ctx) {
     const cv = await getCV();
     if (!cv) {
-      return ctx.render({ subtitle: "", sections: [], content: "" });
+      return ctx.render({ sections: [], content: "" });
     }
     return ctx.render(cv);
   },
@@ -18,7 +18,6 @@ export default function CV({ data }: PageProps<CV>) {
     <MainLayout>
       <div class="">
         <div class="max-w-3xl space-y-8">
-          <p class="mb-4">{data.subtitle}</p>
           {data.sections.map((section, index) => (
             <div key={index} class="mb-6">
               <p class="text-xl font-sans mb-2">{section.title}</p>

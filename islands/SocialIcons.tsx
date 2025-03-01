@@ -3,13 +3,11 @@ import { Social } from "../types/contact.ts";
 
 export default function SocialIcons() {
   const [social, setSocial] = useState<Social | null>(null);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     async function fetchSocial() {
       try {
-        setLoading(true);
         const response = await fetch('/api/social');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -20,17 +18,10 @@ export default function SocialIcons() {
       } catch (err) {
         console.error("Error fetching social data:", err);
         setError("Failed to load social links");
-      } finally {
-        setLoading(false);
       }
     }
     fetchSocial();
   }, []);
-
-  // Show loading state
-//   if (loading) {
-//     return <div class="text-sm text-gray-500">Loading links...</div>;
-//   }
 
   // Show error state
   if (error) {

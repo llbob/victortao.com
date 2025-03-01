@@ -5,13 +5,11 @@ export async function getCV(): Promise<CV | null> {
   try {
     const mdContent = await Deno.readTextFile("about.md");
     const { attrs, body } = extract(mdContent);
-    const { subtitle, sections } = attrs as {
-      subtitle: string;
+    const { sections } = attrs as {
       sections: { title: string; items: string[] }[];
     };
     
     return {
-      subtitle,
       sections,
       content: body
     };

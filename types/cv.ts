@@ -4,7 +4,6 @@ export interface CVSection {
 }
 
 export interface CV {
-  subtitle: string;
   sections: CVSection[];
   content: string;
 } 
