@@ -93,6 +93,7 @@ content:
         pattern:
           regex: '^https?://.*$'
           message: "Please enter a valid URL starting with http:// or https://"
+        required: false
       - name: body
         label: Content
         type: rich-text
@@ -132,6 +133,7 @@ content:
         pattern:
           regex: '^https?://.*$'
           message: "Please enter a valid URL starting with http:// or https://"
+        required: false
       - name: body
         label: Content
         type: rich-text
