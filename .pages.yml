@@ -50,10 +50,10 @@ content:
         options:
           format: html
 
-  - name: cv
+  - name: about
     label: About
     type: file
-    path: cv.md
+    path: about.md
     format: yaml-frontmatter
     fields:
       - name: subtitle
