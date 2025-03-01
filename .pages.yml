@@ -24,6 +24,11 @@ content:
       - name: year
         label: Year
         type: number
+      - name: imageUrl
+        label: Project Image
+        type: image
+        list: false
+        description: "The project header image"
       - name: carouselImages
         label: Project Images
         type: object
@@ -37,11 +42,6 @@ content:
             label: Image Caption
             type: string
             description: "Optional caption for this image"
-        description: "Project images for carousel - carousel is placed at the page bottom"
-      - name: imageUrl
-        label: Project Images
-        type: image
-        list: true
         description: "Project images for carousel - carousel is placed at the page bottom"
       - name: body
         label: Content
