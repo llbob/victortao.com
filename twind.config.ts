@@ -13,6 +13,7 @@ export default {
           backgroundColor: '#EEE',
           activeColor: '#000',
           white: '#EEE',
+          pink: '#FFC0CB',
         },
         keyframes: {
           bounceAround: {

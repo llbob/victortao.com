@@ -24,7 +24,7 @@ export default function CultProjectPage({ data }: PageProps<CultProject>) {
   return (
     <MainLayout>
       <div class="max-w-3xl">
-        {data.headerImageUrl && (
+        {/* {data.headerImageUrl && (
           <div class="flex justify-center">
             <img 
               src={data.headerImageUrl} 
@@ -32,7 +32,7 @@ export default function CultProjectPage({ data }: PageProps<CultProject>) {
               class="w-full h-auto max-h-96 w-auto mb-4" 
             />
           </div>
-        )}
+        )} */}
         <p class="text-3xl font-sans mb-2">{data.title}</p>
         <p class="text-2xl font-sans mb-4">År: {data.year}</p>
         <div class="mb-4" dangerouslySetInnerHTML={{ __html: data.content }} />

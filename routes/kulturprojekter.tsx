@@ -26,7 +26,7 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
           {data.map((project) => (
             <div class="mb-8 group" key={project.id}>
               {project.externalUrl ? (
-                <a href={project.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-green-500 block">
+                <a href={project.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-pink block">
                   <p class="text-xs">Kulturprojekt</p>
                   <p class="text-xl font-sans flex justify-between pt-1">
                     <span class="relative overflow-hidden inline-block">
@@ -43,7 +43,7 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
                   )}
                 </a>
               ) : (
-                <a href={`/kulturprojekter/${project.id}`} class="hover:text-green-500 block">
+                <a href={`/kulturprojekter/${project.id}`} class="hover:text-pink block">
                   <p class="text-xs">Kulturprojekt</p>
                   <p class="text-xl font-sans flex justify-between pt-1">
                     <span class="relative overflow-hidden inline-block">

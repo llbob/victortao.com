@@ -26,7 +26,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
           {data.map((article) => (
             <div class="mb-8 group" key={article.id}>
               {article.externalUrl ? (
-                <a href={article.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-green-500 block">
+                <a href={article.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-pink block">
                   <p class="text-xs">Artikel</p>
                   <p class="text-xl font-sans">
                     <span class="relative overflow-hidden inline-block">
@@ -54,7 +54,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                   )}
                 </a>
               ) : (
-                <a href={`/artikler/${article.id}`} class="hover:text-green-500 block">
+                <a href={`/artikler/${article.id}`} class="hover:text-pink block">
                   <p class="text-xs">Artikel</p>
                   <p class="text-sm font-sans pt-1">
                     <span class="">
