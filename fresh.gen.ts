@@ -15,6 +15,7 @@ import * as $om from "./routes/om.tsx";
 import * as $presse from "./routes/presse.tsx";
 import * as $projects_title_ from "./routes/projects/[title].tsx";
 import * as $udstillinger from "./routes/udstillinger.tsx";
+import * as $ArchiveCarousel from "./islands/ArchiveCarousel.tsx";
 import * as $Navigation from "./islands/Navigation.tsx";
 import * as $ProjectCarousel from "./islands/ProjectCarousel.tsx";
 import * as $SocialIcons from "./islands/SocialIcons.tsx";
@@ -37,6 +38,7 @@ const manifest = {
     "./routes/udstillinger.tsx": $udstillinger,
   },
   islands: {
+    "./islands/ArchiveCarousel.tsx": $ArchiveCarousel,
     "./islands/Navigation.tsx": $Navigation,
     "./islands/ProjectCarousel.tsx": $ProjectCarousel,
     "./islands/SocialIcons.tsx": $SocialIcons,
