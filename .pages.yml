@@ -9,11 +9,11 @@ content:
     type: collection
     path: _projects
     view:
-      fields: [ title, imageUrl, description ]
+      fields: [ title, imageUrl, description, year ]
       primary: title
-      sort: [ title ]
+      sort: [ title, year ]
       default:
-        sort: title
+        sort: year
         order: desc
     fields:
       - name: title
