@@ -23,31 +23,34 @@ export default function ArticlePage({ data }: PageProps<Article>) {
     <MainLayout>
       <div class="max-w-3xl">
         <div class="mb-8">
+          <p class="text-xs font-sans">Artikel</p>
+          <p class="text-sm font-sans pt-1">
+            <span class="">
+              {data.platform && `${data.platform}`}
+            </span>
+            {data.platform && data.date && <span class="">&nbsp;-&nbsp;</span>}
+            {data.date && (
+              <span class="">
+                {new Date(data.date).toLocaleDateString('no', {
+                  day: '2-digit',
+                  month: '2-digit',
+                  year: 'numeric',
+                }).replace(/\//g, '.')}
+              </span>
+            )}
+          </p>
+          <p class="text-3xl font-sans mb-4 pt-1">{data.title}</p>
+          
           {data.headerImageUrl && (
-            <div class="flex justify-center mb-4">
+            <div class="mb-4">
               <img 
                 src={data.headerImageUrl} 
                 alt={data.title} 
-                class="w-full h-auto max-h-96 object-cover" 
+                class="w-full h-auto object-cover" 
               />
             </div>
           )}
-          <p class="text-3xl font-sans mb-2">{data.title}</p>
-          <p class="text-xl font-sans mb-4">
-            {new Date(data.date).toLocaleDateString()} 
-            {data.platform && (
-              <>
-                {" • "}
-                {data.platformUrl ? (
-                  <a href={data.platformUrl} target="_blank" rel="noopener noreferrer" class="hover:underline">
-                    {data.platform}
-                  </a>
-                ) : (
-                  data.platform
-                )}
-              </>
-            )}
-          </p>
+          
           <div class="mb-4" dangerouslySetInnerHTML={{ __html: data.content }} />
         </div>
       </div>
