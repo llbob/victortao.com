@@ -204,7 +204,7 @@ content:
           format: html
 
   - name: press
-    label: Press
+    label: Presse
     type: file
     path: press.md
     format: yaml-frontmatter
@@ -217,6 +217,10 @@ content:
           - name: title
             label: Article Title
             type: string
+            required: true
+          - name: articleDate
+            label: data
+            type: date
             required: true
           - name: url
             label: Article URL
