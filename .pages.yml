@@ -50,28 +50,6 @@ content:
         options:
           format: html
 
-  - name: about
-    label: About
-    type: file
-    path: about.md
-    format: yaml-frontmatter
-    fields:
-      - name: paragraphs
-        label: Paragraphs
-        type: text
-        list: true
-        description: "Add multiple paragraphs for the about section"
-      - name: imageUrl
-        label: Profile Image
-        type: image
-        description: "Profile or featured image"
-      - name: body
-        label: Content
-        type: rich-text
-        description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
-        options:
-          format: html
-
   - name: cv
     label: CV
     type: file
