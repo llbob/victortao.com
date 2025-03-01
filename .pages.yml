@@ -24,11 +24,25 @@ content:
       - name: year
         label: Year
         type: number
+      - name: carouselImages
+        label: Project Images
+        type: object
+        list: true
+        fields:
+          - name: url
+            label: Image URL
+            type: image
+            required: true
+          - name: caption
+            label: Image Caption
+            type: string
+            description: "Optional caption for this image"
+        description: "Project images for carousel - carousel is placed at the page bottom"
       - name: imageUrl
         label: Project Images
         type: image
         list: true
-        description: "Project images for carousel"
+        description: "Project images for carousel - carousel is placed at the page bottom"
       - name: body
         label: Content
         type: rich-text
