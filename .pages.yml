@@ -194,7 +194,7 @@ content:
         type: image
         description: "Main image for the homepage"
       - name: message
-        label: Welcome Message
+        label: About
         type: text
         description: "Main welcome message or introduction"
       - name: body
