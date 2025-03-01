@@ -1,12 +1,12 @@
 ---
 items:
-  - title: Lorem ipsum dolor sit (3/10/2024)
+  - title: Lorem ipsum dolor sit
     articleDate: 2025-03-13
     url: https://example.com/interview
-  - title: Lorem ipsum dolor sitte sit (3/10/2024)
+  - title: Lorem ipsum dolor sitte sit
     articleDate: 2025-03-12
     url: https://example.com/feature
-  - title: Lorem ipsum dolor sit sit (3/10/2024)
+  - title: Lorem ipsum dolor sit sit
     articleDate: 2025-03-26
     url: https://example.com/feature
 ---
