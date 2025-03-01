@@ -195,8 +195,10 @@ content:
         description: "Main image for the homepage"
       - name: message
         label: About
-        type: text
-        description: "Main welcome message or introduction"
+        type: rich-text
+        description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
+        options:
+          format: html
       - name: body
         label: Content
         type: rich-text
