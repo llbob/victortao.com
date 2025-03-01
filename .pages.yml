@@ -232,3 +232,52 @@ content:
         description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
         options:
           format: html
+
+  - name: contact
+    label: Contact
+    type: file
+    path: contact.md
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+        default: "Kontakt"
+      - name: email
+        label: Email Address
+        type: string
+        pattern:
+          regex: '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+          message: "Please enter a valid email address"
+      - name: body
+        label: Content
+        type: rich-text
+        description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
+        options:
+          format: html
+
+  - name: social
+    label: Social Media
+    type: file
+    path: _data/social.json
+    format: json
+    fields:
+      - name: linkedin
+        label: LinkedIn URL
+        type: string
+        pattern:
+          regex: '^https?://.*$'
+          message: "Please enter a valid URL starting with http:// or https://"
+      - name: instagram
+        label: Instagram URL
+        type: string
+        pattern:
+          regex: '^https?://.*$'
+          message: "Please enter a valid URL starting with http:// or https://"
+      - name: showInHeader
+        label: Show in Header
+        type: boolean
+        default: true
+        description: "Display social media icons in the top right corner of the website"
+
