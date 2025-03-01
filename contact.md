@@ -2,6 +2,4 @@
 title: Kontakt
 email: example@example.com
 ---
-<p>Feel free to reach out to me via email or through my social media channels. I'm always open to discussing new projects, collaborations, or just having a chat about art and culture.</p>
-
-<p>I typically respond within 1-2 business days.</p> 
+<p>Etiam sit amet nibh ut odio vestibulum tristique ut cursus elit. Nam laoreet non mi id iaculis. Donec molestie posuere luctus. Sed a metus at dui condimentum blandit. Ut ornare vitae ipsum tincidunt blandit. </p>
