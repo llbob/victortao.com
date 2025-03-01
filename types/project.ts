@@ -7,6 +7,7 @@ export interface Project {
   id: string;
   title: string;
   year: number;
+  headerImageUrl: string;
   images: ProjectImage[];
   content: string;
 } 

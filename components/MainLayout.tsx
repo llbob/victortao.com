@@ -17,9 +17,8 @@ export function MainLayout({ children }: { children: JSX.Element }) {
             <nav class="md:col-span-1">
               <ul class="flex md:flex-col space-y-0 md:space-y-1 space-x-4 md:space-x-0">
                 <li><a href="/projects" class="font-sans text-xl hover:underline">Projects</a></li>
-                <li><a href="/about" class="font-sans text-xl hover:underline">About</a></li>
                 <li><a href="/press" class="font-sans text-xl hover:underline">Press</a></li>
-                <li><a href="/cv" class="font-sans text-xl hover:underline">CV</a></li>
+                <li><a href="/about" class="font-sans text-xl hover:underline">About</a></li>
               </ul>
             </nav>
             <main class="md:col-span-3">

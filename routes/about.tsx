@@ -1,32 +1,35 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { MainLayout } from "../components/MainLayout.tsx";
-import { getAbout } from "../utils/about.ts";
-import type { About } from "../types/about.ts";
+import { getCV } from "../utils/cv.ts";
+import type { CV } from "../types/cv.ts";
 
-export const handler: Handlers<About> = {
+export const handler: Handlers<CV> = {
   async GET(_req, ctx) {
-    const about = await getAbout();
-    if (!about) {
-      return ctx.render({ paragraphs: [], imageUrl: "", content: "" });
+    const cv = await getCV();
+    if (!cv) {
+      return ctx.render({ subtitle: "", sections: [], content: "" });
     }
-    return ctx.render(about);
+    return ctx.render(cv);
   },
 };
 
-export default function About({ data }: PageProps<About>) {
+export default function CV({ data }: PageProps<CV>) {
   return (
     <MainLayout>
       <div class="">
         <div class="max-w-3xl space-y-8">
-          {data.paragraphs.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+          <p class="mb-4">{data.subtitle}</p>
+          {data.sections.map((section, index) => (
+            <div key={index} class="mb-6">
+              <p class="text-xl font-sans mb-2">{section.title}</p>
+              <ul class="space-y-4">
+                {section.items.map((item, itemIndex) => (
+                  <li key={itemIndex}>{item}</li>
+                ))}
+              </ul>
+            </div>
           ))}
-          <p>
-            <a class="link" href="/cv">
-              Link to CV
-            </a>
-          </p>
-          <img class="w-full h-auto" src={data.imageUrl} alt="..." />
+          <div dangerouslySetInnerHTML={{ __html: data.content }} />
         </div>
       </div>
     </MainLayout>

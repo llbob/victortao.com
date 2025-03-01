@@ -12,9 +12,10 @@ export async function getProjects(): Promise<Project[]> {
       );
       
       const { attrs, body } = extract(mdContent);
-      const { title, year, carouselImages } = attrs as {
+      const { title, year, headerImageUrl, carouselImages } = attrs as {
         title: string;
         year: number;
+        headerImageUrl: string;
         carouselImages: Array<{url: string; caption?: string}>;
       };
 
@@ -33,6 +34,7 @@ export async function getProjects(): Promise<Project[]> {
         id: title.toLowerCase().replace(/\s+/g, '-'),
         title,
         year,
+        headerImageUrl,
         images: processedImages,
         content: body
       });
