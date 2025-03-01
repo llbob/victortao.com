@@ -51,7 +51,7 @@ content:
           format: html
 
   - name: cv
-    label: CV
+    label: About
     type: file
     path: cv.md
     format: yaml-frontmatter
