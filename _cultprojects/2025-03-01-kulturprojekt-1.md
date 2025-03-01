@@ -2,7 +2,7 @@
 title: Kulturprojekt 1
 year: 2020
 headerImageUrl: /assets/placeholder/image15.jpg
-externalUrl: https://google.com
+externalUrl: https://
 carouselImages:
   - url: /assets/placeholder/image15.jpg
     caption: Some caption
