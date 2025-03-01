@@ -23,6 +23,7 @@ export async function getContact(): Promise<Contact | null> {
 
 export async function getSocial(): Promise<Social | null> {
   try {
+    // This might not work in the browser context
     const jsonContent = await Deno.readTextFile("_data/social.json");
     return JSON.parse(jsonContent) as Social;
   } catch (error) {
