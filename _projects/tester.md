@@ -1,6 +1,15 @@
 ---
 title: Lorem Ipsum Dolor
 year: 2020
+carouselImages:
+  - url: /assets/placeholder/image10.jpg
+    caption: This is an image caption
+  - url: /assets/placeholder/image12.jpg
+    caption: This is a second image caption
+  - url: /assets/placeholder/image11.jpg
+    caption: This is a third image caption
+  - url: /assets/placeholder/image6.jpg
+    caption: This is a fourth image caption
 imageUrl:
   - /assets/placeholder/image15.jpg
   - /assets/placeholder/image16.jpg
