@@ -21,7 +21,7 @@ export default function PressPage({ data }: PageProps<Press>) {
           {data.items.map((item, index) => (
             <p key={index}>
               <a
-                class="link"
+                class="text-black underline text-lg"
                 href={item.url}
               >
                 {item.title}

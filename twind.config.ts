@@ -11,6 +11,7 @@ export default {
         },
         colors: {
           backgroundColor: '#F8F8F8',
+          activeColor: '#D8BFD8',
         },
       },
     },
@@ -28,8 +29,16 @@ export default {
       'menu-item': 'text-gray-800 transition-colors duration-300 ease-in-out hover:underline',
       'projects-card': 'overflow-hidden transition-shadow duration-300 ease-in-out mb-16',
       'avatar': 'max-w-full h-auto',
-      'link': 'text-blue-800 underline hover:text-gray-800',
+      'link': 'text-activeColor hover:underline',
+      'menu-link': 'text-md hover:underline hover:text-activeColor',
       'index-image': 'h-[80vh] w-full object-cover mb-2',
+      'scrollbar-hide': {
+        '-ms-overflow-style': 'none',
+        'scrollbar-width': 'none',
+        '&::-webkit-scrollbar': {
+          display: 'none'
+        }
+      },
     },
   } as Configuration),
   selfURL: import.meta.url,

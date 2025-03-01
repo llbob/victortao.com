@@ -27,9 +27,7 @@ export default function Home({ data }: PageProps<Index>) {
             />
           </div>
           <div className="w-full md:w-1/2 flex items-center">
-            <p class="message">
-              {data.message}
-            </p>
+            <div class="message" dangerouslySetInnerHTML={{ __html: data.message }} />
           </div>
         </div>
         {data.content && (

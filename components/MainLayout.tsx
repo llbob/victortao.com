@@ -16,13 +16,20 @@ export function MainLayout({ children }: { children: JSX.Element }) {
             <a href="/" class="block">
               <span class="text-xl font-sans hover:underline">Victor Tao</span>
             </a>
-            <div class="flex-shrink-0">
-              <SocialIcons />
+            <div class="flex items-center">
+              <div class="hidden md:block flex-shrink-0">
+                <SocialIcons />
+              </div>
+              <div class="md:hidden">
+                <Navigation />
+              </div>
             </div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <Navigation />
-            <main class="md:col-span-3">
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div class="hidden md:block">
+              <Navigation />
+            </div>
+            <main class="md:col-span-4">
               {children}
             </main>
           </div>

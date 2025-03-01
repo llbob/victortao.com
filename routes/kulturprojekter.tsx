@@ -27,8 +27,7 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
             <div class="mb-8" key={project.id}>
               {project.externalUrl ? (
                 <a href={project.externalUrl} target="_blank" rel="noopener noreferrer">
-                  <p class="text-xl font-sans">{project.title}</p>
-                  <p class="text-lg font-sans mb-2">År: {project.year}</p>
+                  <p class="text-xl font-sans">{project.title}, {project.year}</p>
                   {project.headerImageUrl && (
                     <img
                       class="w-full h-auto object-cover mt-2"
@@ -39,8 +38,7 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
                 </a>
               ) : (
                 <a href={`/kulturprojekter/${project.id}`}>
-                  <p class="text-xl font-sans">{project.title}</p>
-                  <p class="text-lg font-sans mb-2">År: {project.year}</p>
+                  <p class="text-xl font-sans">{project.title}, {project.year}</p>
                   {project.headerImageUrl && (
                     <img
                       class="w-full h-auto object-cover mt-2"

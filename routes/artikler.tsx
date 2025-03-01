@@ -29,8 +29,16 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                 <a href={article.externalUrl} target="_blank" rel="noopener noreferrer">
                   <p class="text-xl font-sans">{article.title}</p>
                   <p class="text-lg font-sans mb-2">
-                    {new Date(article.date).toLocaleDateString()} 
-                    {article.platform && ` • ${article.platform}`}
+                    <span class="link">
+                      {new Date(article.date).toLocaleDateString('no', {
+                        day: '2-digit',
+                        month: '2-digit',
+                        year: 'numeric',
+                      }).replace(/\//g, '.')} 
+                    </span>
+                    <span class="text-gray-400">
+                      {article.platform && ` • ${article.platform}`}
+                    </span>
                   </p>
                   {article.headerImageUrl && (
                     <img
@@ -43,9 +51,17 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
               ) : (
                 <a href={`/artikler/${article.id}`}>
                   <p class="text-xl font-sans">{article.title}</p>
-                  <p class="text-lg font-sans mb-2">
-                    {new Date(article.date).toLocaleDateString()} 
-                    {article.platform && ` • ${article.platform}`}
+                    <p class="text-lg font-sans mb-2">
+                      <span class="link">
+                        {new Date(article.date).toLocaleDateString('no', {
+                          day: '2-digit',
+                          month: '2-digit',
+                          year: 'numeric',
+                        }).replace(/\//g, '.')} 
+                      </span>
+                    <span class="text-gray-400">
+                      {article.platform && ` • ${article.platform}`}
+                    </span>
                   </p>
                   {article.headerImageUrl && (
                     <img
