@@ -3,7 +3,7 @@ import { CV } from "../types/cv.ts";
 
 export async function getCV(): Promise<CV | null> {
   try {
-    const mdContent = await Deno.readTextFile("cv.md");
+    const mdContent = await Deno.readTextFile("about.md");
     const { attrs, body } = extract(mdContent);
     const { subtitle, sections } = attrs as {
       subtitle: string;

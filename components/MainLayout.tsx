@@ -1,5 +1,6 @@
 import { JSX } from "preact";
 import { StripeScript } from "./StripeScript.tsx";
+import Navigation from "../islands/Navigation.tsx";
 
 // Define the layout component that accepts children
 export function MainLayout({ children }: { children: JSX.Element }) {
@@ -14,13 +15,7 @@ export function MainLayout({ children }: { children: JSX.Element }) {
             <span class="text-xl font-sans hover:underline">Victor Tao</span>
           </a>
           <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <nav class="md:col-span-1">
-              <ul class="flex md:flex-col space-y-0 md:space-y-1 space-x-4 md:space-x-0">
-                <li><a href="/projects" class="font-sans text-xl hover:underline">Projects</a></li>
-                <li><a href="/press" class="font-sans text-xl hover:underline">Press</a></li>
-                <li><a href="/about" class="font-sans text-xl hover:underline">About</a></li>
-              </ul>
-            </nav>
+            <Navigation />
             <main class="md:col-span-3">
               {children}
             </main>

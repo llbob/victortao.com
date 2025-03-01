@@ -17,17 +17,24 @@ export default function Home({ data }: PageProps<Index>) {
   return (
     <MainLayout>
       <div class="max-w-3xl">
-        <div>
+        <div class="flex flex-col md:flex-row gap-4">
           {/* <h1 class="title">{data.title}</h1> */}
-          <img
-            className="index-image"
-            src={data.imageUrl}
-            alt={data.title}
-          />
-          <p class="message">
-            {data.message}
-          </p>
+          <div className="w-full md:w-1/2">
+            <img
+              className="index-image w-full h-auto object-cover"
+              src={data.imageUrl}
+              alt={data.title}
+            />
+          </div>
+          <div className="w-full md:w-1/2 flex items-center">
+            <p class="message">
+              {data.message}
+            </p>
+          </div>
         </div>
+        {data.content && (
+          <div class="mt-8" dangerouslySetInnerHTML={{ __html: data.content }} />
+        )}
       </div>
     </MainLayout>
   );
