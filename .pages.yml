@@ -177,7 +177,7 @@ content:
           format: html
 
   - name: index
-    label: Home
+    label: Hjem
     type: file
     path: index.md
     format: yaml-frontmatter
@@ -219,7 +219,7 @@ content:
             type: string
             required: true
           - name: articleDate
-            label: data
+            label: date
             type: date
             required: true
           - name: url
