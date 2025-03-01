@@ -234,7 +234,7 @@ content:
           format: html
 
   - name: contact
-    label: Contact
+    label: Kontakt
     type: file
     path: contact.md
     format: yaml-frontmatter
@@ -258,7 +258,7 @@ content:
           format: html
 
   - name: social
-    label: Social Media
+    label: SoMe
     type: file
     path: _data/social.json
     format: json
