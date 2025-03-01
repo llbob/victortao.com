@@ -39,7 +39,7 @@ export default function ArticlePage({ data }: PageProps<Article>) {
               </span>
             )}
           </p>
-          <p class="text-3xl font-sans mb-4 pt-1">{data.title}</p>
+          <p class="text-xl font-sans mb-4 pt-1">{data.title}</p>
           
           {data.headerImageUrl && (
             <div class="mb-4">

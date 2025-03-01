@@ -33,6 +33,13 @@ export default function App({ Component }: PageProps) {
               font-style: normal;
               font-display: swap;
             }
+            @font-face {
+              font-family: 'FA CPNWJSUOMXE';
+              src: url('/fonts/FA_CPNWJSUOMXE/FA_CPNWJSUOMXE.ttf') format('truetype');
+              font-weight: normal;
+              font-style: normal;
+              font-display: swap;
+            }
           `}
         </style>
       </head>

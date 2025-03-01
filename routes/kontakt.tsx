@@ -38,7 +38,7 @@ export default function ContactPage({ data }: PageProps<ContactPageData>) {
           
           <div class="bg-black p-6">
             {contact.email && (
-              <div class="mb-6">
+              <div class="mb-0">
                 <h2 class="text-lg text-white font-semibold mb-3">Email</h2>
                 <p class="text-md font-sans">
                   <a 
@@ -51,7 +51,7 @@ export default function ContactPage({ data }: PageProps<ContactPageData>) {
               </div>
             )}
             
-            {social && (
+            {/* {social && (
               <div class="mt-8">
                 <h2 class="text-lg text-white font-semibold mb-3">Sociale medier</h2>
                 <div class="flex space-x-4">
@@ -79,7 +79,7 @@ export default function ContactPage({ data }: PageProps<ContactPageData>) {
                   )}
                 </div>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>

@@ -18,7 +18,7 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
       </MainLayout>
     );
   }
-  
+
   return (
     <MainLayout>
       <div class="max-w-3xl">
@@ -27,13 +27,6 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
             <div class="mb-8 group" key={project.id}>
               {project.externalUrl ? (
                 <a href={project.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-pink block">
-                  <p class="text-xs">Kulturprojekt</p>
-                  <p class="text-xl font-sans flex justify-between pt-1">
-                    <span class="relative overflow-hidden inline-block">
-                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
-                    </span>
-                    <span class="">{project.year}</span>
-                  </p>
                   {project.headerImageUrl && (
                     <img
                       class="w-full h-auto object-cover mt-2"
@@ -41,16 +34,16 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
                       alt={project.title}
                     />
                   )}
+                  <p class="text-xs pt-2">Kulturprojekt - {project.year}</p>
+                  <p class="text-xl font-sans flex justify-between pt-1">
+                    <span class="relative overflow-hidden inline-block">
+                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
+                    </span>
+                  </p>
+
                 </a>
               ) : (
                 <a href={`/kulturprojekter/${project.id}`} class="hover:text-pink block">
-                  <p class="text-xs">Kulturprojekt</p>
-                  <p class="text-xl font-sans flex justify-between pt-1">
-                    <span class="relative overflow-hidden inline-block">
-                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
-                    </span>
-                    <span class="">{project.year}</span>
-                  </p>
                   {project.headerImageUrl && (
                     <img
                       class="w-full h-auto object-cover mt-2"
@@ -58,6 +51,13 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
                       alt={project.title}
                     />
                   )}
+                  <p class="text-xs pt-2">Kulturprojekt - {project.year}</p>
+                  <p class="text-xl font-sans flex justify-between pt-1">
+                    <span class="relative overflow-hidden inline-block">
+                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
+                    </span>
+                  </p>
+
                 </a>
               )}
             </div>

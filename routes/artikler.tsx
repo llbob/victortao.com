@@ -27,7 +27,14 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
             <div class="mb-8 group" key={article.id}>
               {article.externalUrl ? (
                 <a href={article.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-pink block">
-                  <p class="text-xs">Artikel</p>
+                  {article.headerImageUrl && (
+                    <img
+                      class="w-full h-auto object-cover mt-2"
+                      src={article.headerImageUrl}
+                      alt={article.title}
+                    />
+                  )}
+                  <p class="text-xs pt-2">Artikel</p>
                   <p class="text-xl font-sans">
                     <span class="relative overflow-hidden inline-block">
                       <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</span>
@@ -45,6 +52,10 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                       {article.platform && ` • ${article.platform}`}
                     </span>
                   </p>
+
+                </a>
+              ) : (
+                <a href={`/artikler/${article.id}`} class="hover:text-pink block">
                   {article.headerImageUrl && (
                     <img
                       class="w-full h-auto object-cover mt-2"
@@ -52,10 +63,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                       alt={article.title}
                     />
                   )}
-                </a>
-              ) : (
-                <a href={`/artikler/${article.id}`} class="hover:text-pink block">
-                  <p class="text-xs">Artikel</p>
+                  <p class="text-xs pt-2">Artikel</p>
                   <p class="text-sm font-sans pt-1">
                     <span class="">
                       {article.platform && ` ${article.platform}`}
@@ -73,13 +81,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                       <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</span>
                     </span>
                   </p>
-                  {article.headerImageUrl && (
-                    <img
-                      class="w-full h-auto object-cover mt-2"
-                      src={article.headerImageUrl}
-                      alt={article.title}
-                    />
-                  )}
+
                 </a>
               )}
             </div>

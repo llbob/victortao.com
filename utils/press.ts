@@ -6,7 +6,7 @@ export async function getPress(): Promise<Press | null> {
     const mdContent = await Deno.readTextFile("press.md");
     const { attrs, body } = extract(mdContent);
     const { items } = attrs as {
-      items: { title: string; url: string; }[];
+      items: { title: string; articleDate: string; url: string; }[];
     };
     
     return {

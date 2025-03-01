@@ -1,5 +1,6 @@
 export interface PressItem {
   title: string;
+  articleDate?: string;
   url: string;
 }
 
