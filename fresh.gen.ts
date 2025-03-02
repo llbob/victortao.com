@@ -13,8 +13,8 @@ import * as $kulturprojekter from "./routes/kulturprojekter.tsx";
 import * as $kulturprojekter_title_ from "./routes/kulturprojekter/[title].tsx";
 import * as $om from "./routes/om.tsx";
 import * as $presse from "./routes/presse.tsx";
-import * as $projects_title_ from "./routes/projects/[title].tsx";
 import * as $udstillinger from "./routes/udstillinger.tsx";
+import * as $udstillinger_title_ from "./routes/udstillinger/[title].tsx";
 import * as $Navigation from "./islands/Navigation.tsx";
 import * as $ProjectCarousel from "./islands/ProjectCarousel.tsx";
 import * as $SocialIcons from "./islands/SocialIcons.tsx";
@@ -33,8 +33,8 @@ const manifest = {
     "./routes/kulturprojekter/[title].tsx": $kulturprojekter_title_,
     "./routes/om.tsx": $om,
     "./routes/presse.tsx": $presse,
-    "./routes/projects/[title].tsx": $projects_title_,
     "./routes/udstillinger.tsx": $udstillinger,
+    "./routes/udstillinger/[title].tsx": $udstillinger_title_,
   },
   islands: {
     "./islands/Navigation.tsx": $Navigation,
