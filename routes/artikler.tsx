@@ -34,7 +34,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                       alt={article.title}
                     />
                   )}
-                  <p class="text-xs pt-2">Artikel</p>
+                  <p class="text-sm pt-2">Artikel</p>
                   <p class="text-xl font-sans">
                     <span class="relative overflow-hidden inline-block">
                       <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</span>
@@ -55,7 +55,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
 
                 </a>
               ) : (
-                <a href={`/artikler/${article.id}`} class="hover:text-pink block">
+                <a href={`/artikler/${article.id}`} class="hover:text-yellow-800 block">
                   {article.headerImageUrl && (
                     <img
                       class="w-full h-auto object-cover mt-2"
@@ -63,8 +63,8 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                       alt={article.title}
                     />
                   )}
-                  <p class="text-xs pt-2">Artikel</p>
-                  <p class="text-sm font-sans pt-1">
+                  <p class="text-sm pt-2">Artikel</p>
+                  <p class="text-md font-sans pt-1">
                     <span class="">
                       {article.platform && ` ${article.platform}`}
                     </span>

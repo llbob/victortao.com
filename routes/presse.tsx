@@ -20,7 +20,7 @@ export default function PressPage({ data }: PageProps<Press>) {
         <div class="max-w-3xl space-y-8">
           {data.items.map((item, index) => (
             <p key={index}>
-              <span class="text-xs font-sans block">
+              <span class="text-sm font-sans block">
               {new Date(item.articleDate || '').toLocaleDateString('no', {
                 day: '2-digit',
                 month: '2-digit',

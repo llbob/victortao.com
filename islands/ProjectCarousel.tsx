@@ -47,7 +47,7 @@ export default function ProjectCarousel({ project, showNavigation = true }: Proj
               className="max-h-[650px] w-full object-contain transition-opacity duration-300"
             />
             <div className="absolute bottom-3 right-3 flex justify-center">
-            <p className="text-xs text-black bg-backgroundColor rounded-full px-2 py-1">({currentImageIndex.value + 1} / {project.images.length})</p>
+            <p className="text-sm text-black bg-backgroundColor rounded-full px-2 py-1">({currentImageIndex.value + 1} / {project.images.length})</p>
             </div>
           </div>
         </div>

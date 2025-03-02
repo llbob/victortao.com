@@ -23,8 +23,8 @@ export default function ArticlePage({ data }: PageProps<Article>) {
     <MainLayout>
       <div class="max-w-3xl">
         <div class="mb-8">
-          <p class="text-xs font-sans">Artikel</p>
-          <p class="text-sm font-sans pt-1">
+          <p class="text-sm font-sans">Artikel</p>
+          <p class="text-md font-sans pt-1">
             <span class="">
               {data.platform && `${data.platform}`}
             </span>

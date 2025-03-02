@@ -34,7 +34,7 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
                       src={project.headerImageUrl}
                       alt={project.title}
                     />
-                    <p class="text-xs pt-2">Udstilling - {project.year}</p>
+                    <p class="text-sm pt-2">Udstilling - {project.year}</p>
                     <p class="text-xl font-sans">
                       <span class="relative overflow-hidden inline-block">
                         <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
@@ -64,7 +64,7 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
                         src={project.headerImageUrl}
                         alt={project.title}
                       />
-                      <p class="text-xs pt-2">Udstilling - {project.year}</p>
+                      <p class="text-sm pt-2">Udstilling - {project.year}</p>
                       <p class="text-xl font-sans">
                         <span class="relative overflow-hidden inline-block">
                           <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>

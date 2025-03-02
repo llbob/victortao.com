@@ -103,7 +103,7 @@ export default {
       'projects-card': 'overflow-hidden transition-shadow duration-300 ease-in-out mb-16',
       'avatar': 'max-w-full h-auto',
       'link': 'text-activeColor hover:underline',
-      'menu-link': 'text-md hover:underline hover:text-activeColor',
+      'menu-link': 'text-lg hover:underline hover:text-activeColor',
       'index-image': 'h-[80vh] w-full object-cover mb-2',
       'scrollbar-hide': {
         '-ms-overflow-style': 'none',

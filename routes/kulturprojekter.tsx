@@ -26,7 +26,7 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
           {data.map((project) => (
             <div class="mb-8 group" key={project.id}>
               {project.externalUrl ? (
-                <a href={project.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-pink block">
+                <a href={project.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-green-800 block">
                   {project.headerImageUrl && (
                     <img
                       class="w-full h-auto object-cover mt-2"
@@ -34,7 +34,7 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
                       alt={project.title}
                     />
                   )}
-                  <p class="text-xs pt-2">Kulturprojekt - {project.year}</p>
+                  <p class="text-sm pt-2">Kulturprojekt - {project.year}</p>
                   <p class="text-xl font-sans flex justify-between pt-1">
                     <span class="relative overflow-hidden inline-block">
                       <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
@@ -43,7 +43,7 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
 
                 </a>
               ) : (
-                <a href={`/kulturprojekter/${project.id}`} class="hover:text-pink block">
+                <a href={`/kulturprojekter/${project.id}`} class="hover:text-green-800 block">
                   {project.headerImageUrl && (
                     <img
                       class="w-full h-auto object-cover mt-2"
@@ -51,7 +51,7 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
                       alt={project.title}
                     />
                   )}
-                  <p class="text-xs pt-2">Kulturprojekt - {project.year}</p>
+                  <p class="text-sm pt-2">Kulturprojekt - {project.year}</p>
                   <p class="text-xl font-sans flex justify-between pt-1">
                     <span class="relative overflow-hidden inline-block">
                       <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
