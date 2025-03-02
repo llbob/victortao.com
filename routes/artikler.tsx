@@ -29,7 +29,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                 <a href={article.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-pink block">
                   {article.headerImageUrl && (
                     <img
-                      class="w-full h-auto object-cover mt-2"
+                      class="w-full h-auto min-h-[400px] object-cover mt-2"
                       src={article.headerImageUrl}
                       alt={article.title}
                     />
@@ -58,7 +58,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                 <a href={`/artikler/${article.id}`} class="hover:text-yellow-800 block">
                   {article.headerImageUrl && (
                     <img
-                      class="w-full h-auto object-cover mt-2"
+                      class="w-full h-auto min-h-[400px] object-cover mt-2"
                       src={article.headerImageUrl}
                       alt={article.title}
                     />

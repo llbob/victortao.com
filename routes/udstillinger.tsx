@@ -35,8 +35,8 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
                       alt={project.title}
                     />
                     <p class="text-sm pt-2">Udstilling - {project.year}</p>
-                    <p class="text-xl font-sans">
-                      <span class="relative overflow-hidden inline-block">
+                    <p class="text-xl font-sans truncate">
+                      <span class="relative overflow-hidden truncate inline-block">
                         <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
                       </span>
                     </p>
@@ -65,9 +65,9 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
                         alt={project.title}
                       />
                       <p class="text-sm pt-2">Udstilling - {project.year}</p>
-                      <p class="text-xl font-sans">
-                        <span class="relative overflow-hidden inline-block">
-                          <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
+                      <p class="text-xl font-sans truncate group-hover:overflow-visible group-hover:whitespace-normal">
+                        <span class="inline-block group-hover:animate-text-scroll group-hover:whitespace-nowrap">
+                          {project.title}
                         </span>
                       </p>
 
@@ -80,12 +80,15 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
 
           {/* Scroll indicator */}
           <div class="mt-4 flex justify-center items-center">
-            <div class="w-full max-w-md h-1 bg-gray-200 rounded-full overflow-hidden">
+            <div class="w-full max-w-md h-1 bg-gray-200 rounded-full overflow-visible relative">
               <div
                 id="scrollIndicator"
                 class="h-full bg-black rounded-full transition-all duration-300"
                 style="width: 0%"
               ></div>
+              <div id="glitchSymbolsContainer" class="absolute top-0 left-0 w-full h-full pointer-events-none flex items-center justify-start overflow-visible">
+                {/* Glitch symbols will be added here dynamically */}
+              </div>
             </div>
             <div id="scrollCounter" class="ml-4 text-sm font-mono">
               (0/{data.length})
@@ -98,10 +101,12 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
               document.addEventListener('DOMContentLoaded', () => {
                 const scrollContainer = document.querySelector('.overflow-x-auto');
                 const indicator = document.getElementById('scrollIndicator');
+                const glitchContainer = document.getElementById('glitchSymbolsContainer');
                 const counter = document.getElementById('scrollCounter');
                 const totalItems = ${data.length};
+                const glitchSymbols = ['⁕', '🫧', '🌻', 'τ', '⁂', '⁀', '⁖', '⁘', '⁙'];
                 
-                if (scrollContainer && indicator && counter) {
+                if (scrollContainer && indicator && counter && glitchContainer) {
                   scrollContainer.addEventListener('scroll', () => {
                     const scrollLeft = scrollContainer.scrollLeft;
                     const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
@@ -111,7 +116,6 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
                     indicator.style.width = scrollPercentage + '%';
                     
                     // Calculate current item based on scroll percentage
-                    // This ensures we reach the last item when fully scrolled
                     const currentItem = Math.min(
                       Math.round((scrollPercentage / 100) * (totalItems - 1)),
                       totalItems - 1
@@ -119,6 +123,26 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
                     
                     // Update the counter text
                     counter.textContent = '(' + (currentItem + 1) + '/' + totalItems + ')';
+                    
+                    // Add random glitch symbols occasionally
+                    if (Math.random() > 0.85) {
+                      const randomSymbol = glitchSymbols[Math.floor(Math.random() * glitchSymbols.length)];
+                      const symbolElement = document.createElement('div');
+                      symbolElement.textContent = randomSymbol;
+                      symbolElement.style.position = 'absolute';
+                      symbolElement.style.left = (scrollPercentage * 0.95) + '%';
+                      symbolElement.style.top = (Math.random() > 0.5 ? '-10px' : '0px');
+                      symbolElement.style.fontSize = '16px';
+                      symbolElement.style.color = Math.random() > 0.5 ? 'black' : 'rgb(147, 123, 151)';
+                      symbolElement.style.transform = 'rotate(' + (Math.random() * 40 - 20) + 'deg)';
+                      symbolElement.style.opacity = '0.8';
+                      glitchContainer.appendChild(symbolElement);
+                      
+                      // Remove after a short delay
+                      setTimeout(() => {
+                        glitchContainer.removeChild(symbolElement);
+                      }, 300 + Math.random() * 200);
+                    }
                   });
                 }
               });

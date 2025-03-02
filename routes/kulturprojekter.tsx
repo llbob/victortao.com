@@ -29,7 +29,7 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
                 <a href={project.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-green-800 block">
                   {project.headerImageUrl && (
                     <img
-                      class="w-full h-auto object-cover mt-2"
+                      class="w-full h-auto min-h-[400px] object-cover mt-2"
                       src={project.headerImageUrl}
                       alt={project.title}
                     />
@@ -46,7 +46,7 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
                 <a href={`/kulturprojekter/${project.id}`} class="hover:text-green-800 block">
                   {project.headerImageUrl && (
                     <img
-                      class="w-full h-auto object-cover mt-2"
+                      class="w-full h-auto min-h-[400px] object-cover mt-2"
                       src={project.headerImageUrl}
                       alt={project.title}
                     />
