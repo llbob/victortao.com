@@ -21,7 +21,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
 
   return (
     <MainLayout>
-      <div class="max-w-3xl">
+      <div class="max-w-4xl">
         <div class="grid grid-cols-1 gap-8">
           {data.map((article) => (
             <div class="mb-8 group" key={article.id}>

@@ -13,51 +13,16 @@ export default function App({ Component }: PageProps) {
         <style>
           {`
             @font-face {
-              font-family: 'Object Sans';
-              src: url('/fonts/ObjectSans/ObjectSans-Regular.woff2') format('woff2');
-              font-weight: 400;
-              font-style: normal;
-              font-display: swap;
-            }
-            @font-face {
-              font-family: 'Object Sans';
-              src: url('/fonts/ObjectSans/ObjectSans-Medium.woff2') format('woff2');
-              font-weight: 500;
-              font-style: normal;
-              font-display: swap;
-            }
-            @font-face {
-              font-family: 'Object Sans';
-              src: url('/fonts/ObjectSans/ObjectSans-Bold.woff2') format('woff2');
-              font-weight: 700;
+              font-family: 'FA CPNWJSUOMXE';
+              src: url('/fonts/FA_CPNWJSUOMXE/FA_CPNWJSUOMXE.ttf') format('truetype');
+              font-weight: normal;
               font-style: normal;
               font-display: swap;
             }
               @font-face {
-              font-family: 'GFS Artemisia';
-              src: url('/fonts/GFS_Artemisia/GFSArtemisia-Regular.woff2') format('woff2');
+              font-family: 'Montaga';
+              src: url('/fonts/Montaga/Montaga-Regular.woff') format('woff');
               font-weight: 400;
-              font-style: normal;
-              font-display: swap;
-            }
-            @font-face {
-              font-family: 'GFS Artemisia';
-              src: url('/fonts/GFS_Artemisia/GFSArtemisia-Italic.woff2') format('woff2');
-              font-weight: 400;
-              font-style: italic;
-              font-display: swap;
-            }
-            @font-face {
-              font-family: 'GFS Artemisia';
-              src: url('/fonts/GFS_Artemisia/GFSArtemisia-Bold.woff2') format('woff2');
-              font-weight: 600;
-              font-style: normal;
-              font-display: swap;
-            }
-            @font-face {
-              font-family: 'FA CPNWJSUOMXE';
-              src: url('/fonts/FA_CPNWJSUOMXE/FA_CPNWJSUOMXE.ttf') format('truetype');
-              font-weight: normal;
               font-style: normal;
               font-display: swap;
             }

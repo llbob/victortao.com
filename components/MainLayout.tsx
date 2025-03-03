@@ -15,7 +15,7 @@ export function MainLayout({ children }: { children: JSX.Element }) {
           <div class="sticky top-0 left-0 w-full bg-backgroundColor z-50">
             <div class="flex justify-between items-center mb-2 md:mb-4 lg:mb-8">
               <a href="/" class="block">
-                <div class="text-lg font-serif hover:underline relative overflow-hidden hover:text-pink">
+                <div class="text-lg font-serif relative overflow-hidden hover:scale-110">
                   <span class="inline-block animate-bounce-around">Victor</span>
                   <span class="mx-1"></span>
                   <span class="inline-block relative">

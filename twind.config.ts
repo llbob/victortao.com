@@ -6,9 +6,7 @@ export default {
     theme: {
       extend: {
         fontFamily: {
-          base: ['GFS Artemisia', 'sans-serif'],
-          sans: ['Object Sans', 'sans-serif'],
-          serif: ['GFS Artemisia', 'serif'],
+          serif: ['Montaga', 'serif'],
           fa: ['FA CPNWJSUOMXE', 'sans-serif'],
         },
         colors: {
@@ -98,11 +96,6 @@ export default {
       },
     },
     plugins: {
-      'projects-image': 'w-full h-[600px] object-cover mt-4 transition-all duration-300 ease-in-out hover:opacity-95',
-      'page-name': 'pb-2',
-      'menu-item': 'text-gray-800 transition-colors duration-300 ease-in-out hover:underline',
-      'projects-card': 'overflow-hidden transition-shadow duration-300 ease-in-out mb-16',
-      'avatar': 'max-w-full h-auto',
       'link': 'text-activeColor hover:underline',
       'menu-link': 'text-lg hover:underline hover:text-activeColor',
       'index-image': 'h-[80vh] w-full object-cover mb-2',

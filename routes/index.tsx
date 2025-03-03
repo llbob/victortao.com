@@ -16,7 +16,7 @@ export const handler: Handlers<Index> = {
 export default function Home({ data }: PageProps<Index>) {
   return (
     <MainLayout>
-      <div class="max-w-3xl">
+      <div class="max-w-4xl">
         <div class="flex flex-col md:flex-row gap-4">
           {/* <h1 class="title">{data.title}</h1> */}
           <div className="w-full md:w-1/2">
