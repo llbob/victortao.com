@@ -33,8 +33,8 @@ export default function CultProjectPage({ data }: PageProps<CultProject>) {
             />
           </div>
         )} */}
-        <p class="text-sm font-sans">Kulturprojekt - {data.year}</p>
-        <p class="text-xl font-sans mb-2 pt-1">{data.title}</p>
+        <p class="text-sm font-serif italic">Kulturprojekt - {data.year}</p>
+        <p class="text-xl font-serif mb-2 pt-1">{data.title}</p>
         <div class="mb-4" dangerouslySetInnerHTML={{ __html: data.content }} />
         {data.images.length > 0 && <ProjectCarousel project={data as unknown as Project} />}
       </div>

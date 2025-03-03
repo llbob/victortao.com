@@ -78,7 +78,7 @@ export default function ProjectCarousel({ project, showNavigation = true }: Proj
         currentImage.caption && (
           <div className="text-black text-center p-4 mt-auto">
             {/* place in front the number of the image */}
-            <p className="text-sm">({currentImageIndex.value + 1}.) {currentImage.caption}</p>
+            <p className="text-lg italic">({currentImageIndex.value + 1}.) {currentImage.caption}</p>
           </div>
         )
       }

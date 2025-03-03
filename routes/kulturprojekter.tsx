@@ -34,8 +34,8 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
                       alt={project.title}
                     />
                   )}
-                  <p class="text-sm pt-2">Kulturprojekt - {project.year}</p>
-                  <p class="text-xl font-sans flex justify-between pt-1">
+                  <p class="text-sm pt-2 italic">Kulturprojekt - {project.year}</p>
+                  <p class="text-xl font-serif flex justify-between pt-1">
                     <span class="relative overflow-hidden inline-block">
                       <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
                     </span>
@@ -51,8 +51,8 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
                       alt={project.title}
                     />
                   )}
-                  <p class="text-sm pt-2">Kulturprojekt - {project.year}</p>
-                  <p class="text-xl font-sans flex justify-between pt-1">
+                  <p class="text-sm pt-2 italic">Kulturprojekt - {project.year}</p>
+                  <p class="text-xl font-serif flex justify-between pt-1">
                     <span class="relative overflow-hidden inline-block">
                       <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
                     </span>

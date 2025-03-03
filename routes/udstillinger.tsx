@@ -34,13 +34,13 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
                       src={project.headerImageUrl}
                       alt={project.title}
                     />
-                    <p class="text-sm pt-2">Udstilling - {project.year}</p>
-                    <p class="text-xl font-sans truncate">
+                    <p class="text-sm pt-2 italic">Udstilling - {project.year}</p>
+                    <p class="text-xl font-serif truncate">
                       <span class="relative overflow-hidden truncate inline-block">
                         <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{project.title}</span>
                       </span>
                     </p>
-                    <p class="text-xl font-sans mb-2">År: {project.year}</p>
+                    <p class="text-xl font-serif mb-2">År: {project.year}</p>
                   </div>
                 </a>
               </div>
@@ -64,8 +64,8 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
                         src={project.headerImageUrl}
                         alt={project.title}
                       />
-                      <p class="text-sm pt-2">Udstilling - {project.year}</p>
-                      <p class="text-xl font-sans truncate group-hover:overflow-visible group-hover:whitespace-normal">
+                      <p class="text-sm pt-2 italic">Udstilling - {project.year}</p>
+                      <p class="text-xl font-serif truncate group-hover:overflow-visible group-hover:whitespace-normal">
                         <span class="inline-block group-hover:animate-text-scroll group-hover:whitespace-nowrap">
                           {project.title}
                         </span>
@@ -90,8 +90,8 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
                 {/* Glitch symbols will be added here dynamically */}
               </div>
             </div>
-            <div id="scrollCounter" class="ml-4 text-sm font-mono">
-              (0/{data.length})
+            <div id="scrollCounter" class="ml-4 text-sm font-serif">
+              (0 / {data.length})
             </div>
           </div>
 
@@ -122,7 +122,7 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
                     );
                     
                     // Update the counter text
-                    counter.textContent = '(' + (currentItem + 1) + '/' + totalItems + ')';
+                    counter.textContent = '(' + (currentItem + 1) + ' / ' + totalItems + ')';
                     
                     // Add random glitch symbols occasionally
                     if (Math.random() > 0.85) {

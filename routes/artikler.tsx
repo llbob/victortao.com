@@ -34,22 +34,22 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                       alt={article.title}
                     />
                   )}
-                  <p class="text-sm pt-2">Artikel</p>
-                  <p class="text-xl font-sans">
-                    <span class="relative overflow-hidden inline-block">
-                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</span>
+                  <p class="text-sm pt-2 italic">Artikel</p>
+                  <p class="text-md font-serif pt-1 italic">
+                    <span class="">
+                      {article.platform && ` ${article.platform}`}
                     </span>
-                  </p>
-                  <p class="text-lg font-sans mb-2 flex justify-between">
-                    <span class="link">
+                    <span class="">&nbsp;-&nbsp;
                       {new Date(article.date).toLocaleDateString('no', {
                         day: '2-digit',
                         month: '2-digit',
                         year: 'numeric',
                       }).replace(/\//g, '.')}
                     </span>
-                    <span class="text-gray-400">
-                      {article.platform && ` • ${article.platform}`}
+                  </p>
+                  <p class="text-xl font-serif">
+                    <span class="relative overflow-hidden inline-block">
+                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</span>
                     </span>
                   </p>
 
@@ -63,8 +63,8 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                       alt={article.title}
                     />
                   )}
-                  <p class="text-sm pt-2">Artikel</p>
-                  <p class="text-md font-sans pt-1">
+                  <p class="text-sm pt-2 italic">Artikel</p>
+                  <p class="text-md font-serif pt-1 italic">
                     <span class="">
                       {article.platform && ` ${article.platform}`}
                     </span>
@@ -76,7 +76,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                       }).replace(/\//g, '.')}
                     </span>
                   </p>
-                  <p class="text-xl font-sans">
+                  <p class="text-xl font-serif">
                     <span class="relative overflow-hidden inline-block">
                       <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</span>
                     </span>

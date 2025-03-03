@@ -6,8 +6,9 @@ export default {
     theme: {
       extend: {
         fontFamily: {
+          base: ['GFS Artemisia', 'sans-serif'],
           sans: ['Object Sans', 'sans-serif'],
-          serif: ['Domine', 'serif'],
+          serif: ['GFS Artemisia', 'serif'],
           fa: ['FA CPNWJSUOMXE', 'sans-serif'],
         },
         colors: {

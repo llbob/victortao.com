@@ -41,7 +41,7 @@ export default function Navigation() {
                     <li>
                         <a
                             href="/udstillinger"
-                            class={`font-sans menu-link ${isActive("/udstillinger") ? "text-activeColor underline" : ""}`}
+                            class={`font-serif menu-link ${isActive("/udstillinger") ? "text-activeColor underline" : ""}`}
                         >
                             Udstillinger
                         </a>
@@ -49,7 +49,7 @@ export default function Navigation() {
                     <li>
                         <a
                             href="/kulturprojekter"
-                            class={`font-sans menu-link ${isActive("/kulturprojekter") ? "text-activeColor underline" : ""}`}
+                            class={`font-serif menu-link ${isActive("/kulturprojekter") ? "text-activeColor underline" : ""}`}
                         >
                             Kulturprojekter
                         </a>
@@ -57,7 +57,7 @@ export default function Navigation() {
                     <li>
                         <a
                             href="/artikler"
-                            class={`font-sans menu-link ${isActive("/artikler") ? "text-activeColor underline" : ""}`}
+                            class={`font-serif menu-link ${isActive("/artikler") ? "text-activeColor underline" : ""}`}
                         >
                             Artikler
                         </a>
@@ -65,7 +65,7 @@ export default function Navigation() {
                     <li>
                         <a
                             href="/presse"
-                            class={`font-sans menu-link ${isActive("/presse") ? "text-activeColor underline" : ""}`}
+                            class={`font-serif menu-link ${isActive("/presse") ? "text-activeColor underline" : ""}`}
                         >
                             Presse
                         </a>
@@ -73,7 +73,7 @@ export default function Navigation() {
                     <li>
                         <a
                             href="/om"
-                            class={`font-sans menu-link ${isActive("/om") ? "text-activeColor underline" : ""}`}
+                            class={`font-serif menu-link ${isActive("/om") ? "text-activeColor underline" : ""}`}
                         >
                             Om mig
                         </a>
@@ -81,7 +81,7 @@ export default function Navigation() {
                     <li>
                         <a
                             href="/kontakt"
-                            class={`font-sans menu-link ${isActive("/kontakt") ? "text-activeColor underline" : ""}`}
+                            class={`font-serif menu-link ${isActive("/kontakt") ? "text-activeColor underline" : ""}`}
                         >
                             Kontakt
                         </a>
@@ -128,7 +128,7 @@ export default function Navigation() {
                         <li>
                             <a
                                 href="/udstillinger"
-                                class={`font-sans text-xl menu-link ${isActive("/udstillinger") ? "text-activeColor underline" : ""}`}
+                                class={`font-serif text-xl menu-link ${isActive("/udstillinger") ? "text-activeColor underline" : ""}`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Udstillinger
@@ -137,7 +137,7 @@ export default function Navigation() {
                         <li>
                             <a
                                 href="/kulturprojekter"
-                                class={`font-sans text-xl menu-link ${isActive("/kulturprojekter") ? "text-activeColor underline" : ""}`}
+                                class={`font-serif text-xl menu-link ${isActive("/kulturprojekter") ? "text-activeColor underline" : ""}`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Kulturprojekter
@@ -146,7 +146,7 @@ export default function Navigation() {
                         <li>
                             <a
                                 href="/artikler"
-                                class={`font-sans text-xl menu-link ${isActive("/artikler") ? "text-activeColor underline" : ""}`}
+                                class={`font-serif text-xl menu-link ${isActive("/artikler") ? "text-activeColor underline" : ""}`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Artikler
@@ -155,7 +155,7 @@ export default function Navigation() {
                         <li>
                             <a
                                 href="/presse"
-                                class={`font-sans text-xl menu-link ${isActive("/presse") ? "text-activeColor underline" : ""}`}
+                                class={`font-serif text-xl menu-link ${isActive("/presse") ? "text-activeColor underline" : ""}`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Presse
@@ -164,7 +164,7 @@ export default function Navigation() {
                         <li>
                             <a
                                 href="/om"
-                                class={`font-sans text-xl menu-link ${isActive("/om") ? "text-activeColor underline" : ""}`}
+                                class={`font-serif text-xl menu-link ${isActive("/om") ? "text-activeColor underline" : ""}`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Om mig
@@ -173,7 +173,7 @@ export default function Navigation() {
                         <li>
                             <a
                                 href="/kontakt"
-                                class={`font-sans text-xl menu-link ${isActive("/kontakt") ? "text-activeColor underline" : ""}`}
+                                class={`font-serif text-xl menu-link ${isActive("/kontakt") ? "text-activeColor underline" : ""}`}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Kontakt

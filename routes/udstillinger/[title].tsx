@@ -27,8 +27,8 @@ export default function ProjectPage({ data }: PageProps<Project>) {
         <div class="flex justify-center">
           <img src={data.headerImageUrl} alt={data.title} class="w-full h-auto max-h-96 w-auto mb-4" />
         </div>
-        <p class="text-sm font-sans">Udstilling - {data.year}</p>
-        <p class="text-xl font-sans mb-2 pt-1">{data.title}</p>
+        <p class="text-sm font-serif italic">Udstilling - {data.year}</p>
+        <p class="text-xl font-serif mb-2 pt-1">{data.title}</p>
         <div class="mb-4" dangerouslySetInnerHTML={{ __html: data.content }} />
         <ProjectCarousel project={data} />
       </div>

@@ -40,7 +40,7 @@ export default function ContactPage({ data }: PageProps<ContactPageData>) {
             {contact.email && (
               <div class="mb-0">
                 <h2 class="text-lg text-white font-semibold mb-3">Email</h2>
-                <p class="text-md font-sans">
+                <p class="text-md font-serif">
                   <a 
                     href={`mailto:${contact.email}`} 
                     class="break-words text-md text-white hover:text-pink"
