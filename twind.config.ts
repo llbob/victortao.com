@@ -97,7 +97,7 @@ export default {
     },
     plugins: {
       'link': 'text-activeColor hover:underline',
-      'menu-link': 'text-lg hover:underline hover:text-activeColor',
+      'menu-link': 'text-lg hover:text-pink scale-105',
       'index-image': 'h-[80vh] w-full object-cover mb-2',
       'scrollbar-hide': {
         '-ms-overflow-style': 'none',

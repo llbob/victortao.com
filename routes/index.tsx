@@ -19,15 +19,15 @@ export default function Home({ data }: PageProps<Index>) {
       <div class="max-w-4xl">
         <div class="flex flex-col md:flex-row gap-4">
           {/* <h1 class="title">{data.title}</h1> */}
+          <div className="w-full md:w-1/2 flex items-center">
+            <div class="message" dangerouslySetInnerHTML={{ __html: data.message }} />
+          </div>
           <div className="w-full md:w-1/2">
             <img
               className="index-image w-full h-auto object-cover"
               src={data.imageUrl}
               alt={data.title}
             />
-          </div>
-          <div className="w-full md:w-1/2 flex items-center">
-            <div class="message" dangerouslySetInnerHTML={{ __html: data.message }} />
           </div>
         </div>
         {data.content && (
