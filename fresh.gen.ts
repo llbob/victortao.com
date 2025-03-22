@@ -5,8 +5,10 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $api_social from "./routes/api/social.tsx";
+import * as $artikler_copy_title_ from "./routes/artikler copy/[title].tsx";
 import * as $artikler from "./routes/artikler.tsx";
 import * as $artikler_title_ from "./routes/artikler/[title].tsx";
+import * as $blog from "./routes/blog.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $kontakt from "./routes/kontakt.tsx";
 import * as $kulturprojekter from "./routes/kulturprojekter.tsx";
@@ -25,8 +27,10 @@ const manifest = {
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/api/social.tsx": $api_social,
+    "./routes/artikler copy/[title].tsx": $artikler_copy_title_,
     "./routes/artikler.tsx": $artikler,
     "./routes/artikler/[title].tsx": $artikler_title_,
+    "./routes/blog.tsx": $blog,
     "./routes/index.tsx": $index,
     "./routes/kontakt.tsx": $kontakt,
     "./routes/kulturprojekter.tsx": $kulturprojekter,

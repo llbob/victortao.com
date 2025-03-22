@@ -64,6 +64,14 @@ export default function Navigation() {
                     </li>
                     <li>
                         <a
+                            href="/blog"
+                            class={`font-serif menu-link ${isActive("/blog") ? "text-activeColor underline" : ""}`}
+                        >
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a
                             href="/presse"
                             class={`font-serif menu-link ${isActive("/presse") ? "text-activeColor underline" : ""}`}
                         >
