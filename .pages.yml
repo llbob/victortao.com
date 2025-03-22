@@ -288,7 +288,7 @@ content:
   - name: blog
     label: Blog
     type: collection
-    path: _articles
+    path: _blog
     view:
       fields: [ title, date]
       primary: title
