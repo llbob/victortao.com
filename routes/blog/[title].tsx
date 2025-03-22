@@ -23,6 +23,15 @@ export default function BlogPage({ data }: PageProps<Blog>) {
     <MainLayout>
       <div class="max-w-3xl">
         <div class="mb-8">
+          {data.headerImageUrl && (
+            <div class="flex justify-center">
+              <img
+                class="w-full h-auto max-h-96 w-auto mb-4"
+                src={data.headerImageUrl}
+                alt={data.title}
+              />
+            </div>
+          )}
           <p class="text-sm font-serif italic">Blog&nbsp;-&nbsp;{new Date(data.date).toLocaleDateString('no', {
             day: '2-digit',
             month: '2-digit',
@@ -40,16 +49,6 @@ export default function BlogPage({ data }: PageProps<Blog>) {
             )}
           </p>
           <p class="text-xl font-serif mb-4">{data.title}</p>
-
-          {data.headerImageUrl && (
-            <div class="mb-4">
-              <img
-                src={data.headerImageUrl}
-                alt={data.title}
-                class="w-full h-auto object-cover"
-              />
-            </div>
-          )}
 
           <div class="mb-4" dangerouslySetInnerHTML={{ __html: data.content }} />
         </div>

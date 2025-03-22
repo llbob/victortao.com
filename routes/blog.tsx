@@ -27,17 +27,19 @@ export default function BlogsPage({ data }: PageProps<Blog[]>) {
             <div class="mb-8 group" key={blog.id}>
               <a href={`/blog/${blog.id}`} class="hover:text-yellow-800 block">
                 {blog.headerImageUrl && (
-                  <img
-                    class="w-full h-auto min-h-[400px] object-cover mt-2"
-                    src={blog.headerImageUrl}
-                    alt={blog.title}
-                  />
+                  <div class="flex justify-center">
+                    <img
+                      class="w-full h-auto max-h-96 w-auto mb-4"
+                      src={blog.headerImageUrl}
+                      alt={blog.title}
+                    />
+                  </div>
                 )}
                 <p class="text-sm pt-2 italic">Blog&nbsp;-&nbsp;{new Date(blog.date).toLocaleDateString('no', {
-                      day: '2-digit',
-                      month: '2-digit',
-                      year: 'numeric',
-                    }).replace(/\//g, '.')}</p>
+                  day: '2-digit',
+                  month: '2-digit',
+                  year: 'numeric',
+                }).replace(/\//g, '.')}</p>
                 <p class="text-xl font-serif">
                   <span class="relative overflow-hidden inline-block">
                     <span class="whitespace-nowrap inline-block">{blog.title}</span>
