@@ -284,3 +284,36 @@ content:
         default: true
         description: "Display social media icons in the top right corner of the website"
 
+
+  - name: blog
+    label: Blog
+    type: collection
+    path: _articles
+    view:
+      fields: [ title, date]
+      primary: title
+      sort: [ date, title ]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        description: "Needs to be unique from title of any other article, otherwise pages will collide."
+        required: true
+      - name: date
+        label: Publication Date
+        type: date
+        required: true
+      - name: headerImageUrl
+        label: Article Image
+        type: image
+        list: false
+        description: "The article header image"
+      - name: body
+        label: Content
+        type: rich-text
+        description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
+        options:
+          format: html
