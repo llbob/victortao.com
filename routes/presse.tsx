@@ -17,7 +17,7 @@ export default function PressPage({ data }: PageProps<Press>) {
   return (
     <MainLayout>
       <div class="">
-        <div class="max-w-3xl space-y-8">
+        <div class="max-w-4xl space-y-8">
           {data.items.map((item, index) => (
             <p key={index}>
               <span class="text-sm font-serif block">

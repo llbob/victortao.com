@@ -23,7 +23,7 @@ export default function CultProjectPage({ data }: PageProps<CultProject>) {
 
   return (
     <MainLayout>
-      <div class="max-w-3xl">
+      <div class="max-w-4xl">
         {/* {data.headerImageUrl && (
           <div class="flex justify-center">
             <img 

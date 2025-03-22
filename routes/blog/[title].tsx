@@ -21,7 +21,7 @@ export default function BlogPage({ data }: PageProps<Blog>) {
 
   return (
     <MainLayout>
-      <div class="max-w-3xl">
+      <div class="max-w-4xl">
         <div class="mb-8">
           {data.headerImageUrl && (
             <div class="flex justify-center">
@@ -37,17 +37,6 @@ export default function BlogPage({ data }: PageProps<Blog>) {
             month: '2-digit',
             year: 'numeric',
           }).replace(/\//g, '.')}</p>
-          <p class="text-md font-serif italic">
-            {/* <span class="">
-              {data.platform && `${data.platform}`}
-            </span>
-            {data.platform && data.date && <span class="">&nbsp;-&nbsp;</span>} */}
-            {data.date && (
-              <span class="">
-
-              </span>
-            )}
-          </p>
           <p class="text-xl font-serif mb-4">{data.title}</p>
 
           <div class="mb-4" dangerouslySetInnerHTML={{ __html: data.content }} />

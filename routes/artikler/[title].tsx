@@ -21,7 +21,7 @@ export default function ArticlePage({ data }: PageProps<Article>) {
 
   return (
     <MainLayout>
-      <div class="max-w-3xl">
+      <div class="max-w-4xl">
         <div class="mb-8">
           <p class="text-sm font-serif italic">Artikel</p>
           <p class="text-md font-serif italic">

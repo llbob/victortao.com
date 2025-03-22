@@ -23,7 +23,7 @@ export default function ProjectPage({ data }: PageProps<Project>) {
 
   return (
     <MainLayout>
-      <div class="max-w-3xl">
+      <div class="max-w-4xl">
         <div class="flex justify-center">
           <img src={data.headerImageUrl} alt={data.title} class="w-full h-auto max-h-96 w-auto mb-4" />
         </div>
