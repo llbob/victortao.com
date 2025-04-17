@@ -20,6 +20,7 @@ content:
         label: Slug
         type: string
         description: "URL-friendly version of the title"
+        required: true
       - name: title
         label: Title
         type: string
@@ -70,6 +71,7 @@ content:
         label: Slug
         type: string
         description: "URL-friendly version of the title"
+        required: true
       - name: title
         label: Title
         type: string
@@ -122,6 +124,7 @@ content:
         label: Slug
         type: string
         description: "URL-friendly version of the title"
+        required: true
       - name: title
         label: Title
         type: string
@@ -313,6 +316,7 @@ content:
         label: Slug
         type: string
         description: "URL-friendly version of the title"
+        required: true
       - name: title
         label: Title
         type: string
