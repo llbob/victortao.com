@@ -55,7 +55,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
 
                 </a>
               ) : (
-                <a href={`/artikler/${article.id}`} class="hover:text-yellow-800 block">
+                <a href={`/artikler/${article.slug}`} class="hover:text-yellow-800 block">
                   {article.headerImageUrl && (
                     <img
                       class="w-full h-auto min-h-[400px] object-cover mt-2"
@@ -90,4 +90,4 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
       </div>
     </MainLayout>
   );
-} 
+}

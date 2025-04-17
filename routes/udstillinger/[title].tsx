@@ -1,14 +1,13 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { MainLayout } from "../../components/MainLayout.tsx";
 import { Project } from "../../types/project.ts";
-import { getProjects } from "../../utils/projects.ts";
+import { getProjectById } from "../../utils/projects.ts";
 import ProjectCarousel from "../../islands/ProjectCarousel.tsx";
 
 export const handler: Handlers<Project | null> = {
   async GET(_req, ctx) {
-    const projects = await getProjects();
-    const project = projects.find((p) => p.id === ctx.params.title);
-    return ctx.render(project || null);
+    const project = await getProjectById(ctx.params.title);
+    return ctx.render(project);
   },
 };
 

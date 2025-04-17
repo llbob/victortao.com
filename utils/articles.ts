@@ -12,17 +12,22 @@ export async function getArticles(): Promise<Article[]> {
       );
       
       const { attrs, body } = extract(mdContent);
-      const { title, date, platform, platformUrl, headerImageUrl, externalUrl } = attrs as {
+      const { title, date, platform, platformUrl, headerImageUrl, externalUrl, slug } = attrs as {
         title: string;
         date: string;
         platform?: string;
         platformUrl?: string;
         headerImageUrl?: string;
         externalUrl?: string;
+        slug?: string;
       };
       
+      // Generate slug from title if not provided
+      const safeSlug = slug || title.toLowerCase().replace(/\s+/g, '-');
+      
       articles.push({
-        id: title.toLowerCase().replace(/\s+/g, '-'),
+        id: safeSlug,
+        slug: safeSlug,
         title,
         date,
         platform,
@@ -40,5 +45,5 @@ export async function getArticles(): Promise<Article[]> {
 
 export async function getArticleById(id: string): Promise<Article | null> {
   const articles = await getArticles();
-  return articles.find(article => article.id === id) || null;
-} 
+  return articles.find(article => article.slug === id || article.id === id) || null;
+}

@@ -12,14 +12,19 @@ export async function getBlogs(): Promise<Blog[]> {
       );
       
       const { attrs, body } = extract(mdContent);
-      const { title, date, headerImageUrl} = attrs as {
+      const { title, date, headerImageUrl, slug } = attrs as {
         title: string;
         date: string;
         headerImageUrl?: string;
+        slug?: string;
       };
       
+      // Generate slug from title if not provided
+      const safeSlug = slug || title.toLowerCase().replace(/\s+/g, '-');
+      
       blogs.push({
-        id: title.toLowerCase().replace(/\s+/g, '-'),
+        id: safeSlug,
+        slug: safeSlug,
         title,
         date,
         headerImageUrl,
@@ -34,5 +39,5 @@ export async function getBlogs(): Promise<Blog[]> {
 
 export async function getBlogById(id: string): Promise<Blog | null> {
   const blogs = await getBlogs();
-  return blogs.find(blog => blog.id === id) || null;
-} 
+  return blogs.find(blog => blog.slug === id || blog.id === id) || null;
+}

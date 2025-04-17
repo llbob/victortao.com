@@ -12,13 +12,17 @@ export async function getCultProjects(): Promise<CultProject[]> {
       );
       
       const { attrs, body } = extract(mdContent);
-      const { title, year, headerImageUrl, externalUrl, carouselImages } = attrs as {
+      const { title, year, headerImageUrl, externalUrl, carouselImages, slug } = attrs as {
         title: string;
         year: number;
         headerImageUrl?: string;
         externalUrl?: string;
         carouselImages?: Array<{url: string; caption?: string}>;
+        slug?: string;
       };
+
+      // Generate slug from title if not provided
+      const safeSlug = slug || title.toLowerCase().replace(/\s+/g, '-');
 
       // Handle both old and new image format
       const processedImages: ProjectImage[] = carouselImages?.map(img => {
@@ -32,7 +36,8 @@ export async function getCultProjects(): Promise<CultProject[]> {
       }) || [];
       
       cultprojects.push({
-        id: title.toLowerCase().replace(/\s+/g, '-'),
+        id: safeSlug,
+        slug: safeSlug,
         title,
         year,
         headerImageUrl,
@@ -48,5 +53,5 @@ export async function getCultProjects(): Promise<CultProject[]> {
 
 export async function getCultProjectById(id: string): Promise<CultProject | null> {
   const cultprojects = await getCultProjects();
-  return cultprojects.find(project => project.id === id) || null;
-} 
+  return cultprojects.find(project => project.slug === id || project.id === id) || null;
+}

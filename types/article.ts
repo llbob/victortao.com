@@ -1,5 +1,6 @@
 export interface Article {
   id: string;
+  slug: string;  // New explicit slug field
   title: string;
   date: string;
   platform?: string;
@@ -7,4 +8,4 @@ export interface Article {
   headerImageUrl?: string;
   externalUrl?: string;
   content: string;
-} 
+}

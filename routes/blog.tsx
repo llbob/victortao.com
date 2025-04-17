@@ -25,7 +25,7 @@ export default function BlogsPage({ data }: PageProps<Blog[]>) {
         <div class="grid grid-cols-1 gap-8">
           {data.map((blog) => (
             <div class="mb-8 group" key={blog.id}>
-              <a href={`/blog/${blog.id}`} class="hover:text-yellow-800 block mb-4">
+              <a href={`/blog/${blog.slug}`} class="hover:text-yellow-800 block mb-4">
                 {blog.headerImageUrl && (
                   <div class="flex justify-center">
                     <img
@@ -49,4 +49,4 @@ export default function BlogsPage({ data }: PageProps<Blog[]>) {
       </div>
     </MainLayout>
   );
-} 
+}

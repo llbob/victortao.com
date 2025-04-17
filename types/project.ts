@@ -5,9 +5,10 @@ export interface ProjectImage {
 
 export interface Project {
   id: string;
+  slug: string;  // New explicit slug field
   title: string;
   year: number;
   headerImageUrl: string;
   images: ProjectImage[];
   content: string;
-} 
+}

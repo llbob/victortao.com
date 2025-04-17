@@ -12,12 +12,16 @@ export async function getProjects(): Promise<Project[]> {
       );
       
       const { attrs, body } = extract(mdContent);
-      const { title, year, headerImageUrl, carouselImages } = attrs as {
+      const { title, year, headerImageUrl, carouselImages, slug } = attrs as {
         title: string;
         year: number;
         headerImageUrl: string;
         carouselImages: Array<{url: string; caption?: string}>;
+        slug?: string;
       };
+
+      // Generate slug from title if not provided
+      const safeSlug = slug || title.toLowerCase().replace(/\s+/g, '-');
 
       // Handle both old and new image format
       const processedImages: ProjectImage[] = carouselImages?.map(img => {
@@ -31,7 +35,8 @@ export async function getProjects(): Promise<Project[]> {
       }) || [];
       
       projects.push({
-        id: title.toLowerCase().replace(/\s+/g, '-'),
+        id: safeSlug,
+        slug: safeSlug,
         title,
         year,
         headerImageUrl,
@@ -42,4 +47,9 @@ export async function getProjects(): Promise<Project[]> {
   }
 
   return projects.sort((a, b) => b.year - a.year);
-} 
+}
+
+export async function getProjectById(id: string): Promise<Project | null> {
+  const projects = await getProjects();
+  return projects.find(project => project.slug === id || project.id === id) || null;
+}

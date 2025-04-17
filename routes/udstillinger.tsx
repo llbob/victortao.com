@@ -27,7 +27,7 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
           <div class="grid grid-cols-1 gap-8">
             {data.map((project) => (
               <div class="mb-8 group" key={project.id}>
-                <a href={`/udstillinger/${project.id}`} class="hover:text-pink block">
+                <a href={`/udstillinger/${project.slug}`} class="hover:text-pink block">
                   <div class="h-full">
                     <img
                       class="w-full w-min-[600px] h-[400px] object-cover transition-all duration-300 hover:opacity-90"
@@ -57,7 +57,7 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
                   class="flex-none w-[50vh] group"
                   key={project.id}
                 >
-                  <a href={`/udstillinger/${project.id}`} class="hover:text-pink block">
+                  <a href={`/udstillinger/${project.slug}`} class="hover:text-pink block">
                     <div class="h-full">
                       <img
                         class="min-w-[50vh] min-h-[70vh] h-full object-cover transition-all duration-300 hover:opacity-90"
