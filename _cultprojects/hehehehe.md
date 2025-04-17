@@ -1,4 +1,5 @@
 ---
+slug: kulturprojekt-2
 title: Kulturprojekt 2
 year: 2020
 headerImageUrl: /assets/placeholder/image15.jpg
