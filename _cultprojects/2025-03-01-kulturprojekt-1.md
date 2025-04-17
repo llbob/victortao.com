@@ -1,6 +1,6 @@
 ---
-title: Kulturprojekt 1
-year: 2020
+title: Creative Footprint Rapport - Københavns Kommune - VibeLab
+year: 2025
 headerImageUrl: /assets/placeholder/image15.jpg
 carouselImages:
   - url: /assets/placeholder/image15.jpg
