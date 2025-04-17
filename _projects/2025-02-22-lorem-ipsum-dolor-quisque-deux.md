@@ -1,4 +1,5 @@
 ---
+slug: lorem-ipsum-one
 title: Lorem Ipsum Dolor Quisque Deux
 year: 2023
 headerImageUrl: /assets/placeholder/image12.jpg
