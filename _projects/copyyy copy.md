@@ -1,4 +1,5 @@
 ---
+slug: lorem-ipsum-three
 title: Lorem Ipsum Dolor Quisque Deux dd
 year: 1910
 headerImageUrl: /assets/placeholder/image12.jpg
