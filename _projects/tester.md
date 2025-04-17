@@ -1,4 +1,5 @@
 ---
+slug: lorem-ipsum-two
 title: Lorem Ipsum Dolor
 year: 2020
 headerImageUrl: /assets/placeholder/image14.jpg
