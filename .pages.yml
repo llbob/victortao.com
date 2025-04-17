@@ -16,6 +16,10 @@ content:
         sort: year
         order: desc
     fields:
+      - name: slug
+        label: Slug
+        type: string
+        description: "URL-friendly version of the title"
       - name: title
         label: Title
         type: string
@@ -62,6 +66,10 @@ content:
         sort: date
         order: desc
     fields:
+      - name: slug
+        label: Slug
+        type: string
+        description: "URL-friendly version of the title"
       - name: title
         label: Title
         type: string
@@ -110,6 +118,10 @@ content:
         sort: year
         order: desc
     fields:
+      - name: slug
+        label: Slug
+        type: string
+        description: "URL-friendly version of the title"
       - name: title
         label: Title
         type: string
@@ -297,6 +309,10 @@ content:
         sort: date
         order: desc
     fields:
+      - name: slug
+        label: Slug
+        type: string
+        description: "URL-friendly version of the title"
       - name: title
         label: Title
         type: string
