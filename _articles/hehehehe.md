@@ -1,4 +1,5 @@
 ---
+slug: artikelnavnet-er-det-her
 title: Artikelnavnet er det her hehe
 date: 2025-03-20
 platform: Politiken
