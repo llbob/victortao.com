@@ -1,4 +1,5 @@
 ---
+slug: footprint-report
 title: Creative Footprint Rapport - Københavns Kommune - VibeLab
 year: 2024
 headerImageUrl: /assets/placeholder/image15.jpg
