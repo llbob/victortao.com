@@ -1,4 +1,5 @@
 ---
+slug: lange-koer
 title: Folk stod i lange køer for at komme ind til festerne. Alle, der kom ind,
   blev blæst bagover af 'pandaen'
 date: 2025-01-28
