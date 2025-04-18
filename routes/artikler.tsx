@@ -37,7 +37,20 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                   <p class="text-sm pt-2 italic">Artikel</p>
                   <p class="text-md font-serif pt-1 italic">
                     <span class="">
-                      {article.platform && ` ${article.platform}`}
+                      {article.platform && (
+                        article.platformUrl ? (
+                          <a
+                            href={article.platformUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="hover:text-pink"
+                          >
+                            {article.platform}
+                          </a>
+                        ) : (
+                          ` ${article.platform}`
+                        )
+                      )}
                     </span>
                     <span class="">&nbsp;-&nbsp;
                       {new Date(article.date).toLocaleDateString('no', {
@@ -49,13 +62,12 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                   </p>
                   <p class="text-xl font-serif">
                     <span class="relative overflow-hidden inline-block">
-                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</span>
+                      <a href={`/artikler/${article.slug}`} class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</a>
                     </span>
                   </p>
-
                 </a>
               ) : (
-                <a href={`/artikler/${article.slug}`} class="hover:text-yellow-800 block">
+                <a href={`/artikler/${article.slug}`} class="hover:text-pink block">
                   {article.headerImageUrl && (
                     <img
                       class="w-full h-auto min-h-[400px] object-cover mt-2"
@@ -66,7 +78,20 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                   <p class="text-sm pt-2 italic">Artikel</p>
                   <p class="text-md font-serif pt-1 italic">
                     <span class="">
-                      {article.platform && ` ${article.platform}`}
+                      {article.platform && (
+                        article.platformUrl ? (
+                          <a
+                            href={article.platformUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="hover:text-pink"
+                          >
+                            {article.platform}
+                          </a>
+                        ) : (
+                          ` ${article.platform}`
+                        )
+                      )}
                     </span>
                     <span class="">&nbsp;-&nbsp;
                       {new Date(article.date).toLocaleDateString('no', {
@@ -78,10 +103,9 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                   </p>
                   <p class="text-xl font-serif">
                     <span class="relative overflow-hidden inline-block">
-                      <span class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</span>
+                      <a href={`/artikler/${article.slug}`} class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</a>
                     </span>
                   </p>
-
                 </a>
               )}
             </div>

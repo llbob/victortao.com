@@ -26,7 +26,20 @@ export default function ArticlePage({ data }: PageProps<Article>) {
           <p class="text-sm font-serif italic">Artikel</p>
           <p class="text-md font-serif italic">
             <span class="">
-              {data.platform && `${data.platform}`}
+              {data.platform && (
+                data.platformUrl ? (
+                  <a
+                    href={data.platformUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:text-pink"
+                  >
+                    {data.platform}
+                  </a>
+                ) : (
+                  `${data.platform}`
+                )
+              )}
             </span>
             {data.platform && data.date && <span class="">&nbsp;-&nbsp;</span>}
             {data.date && (
@@ -56,4 +69,4 @@ export default function ArticlePage({ data }: PageProps<Article>) {
       </div>
     </MainLayout>
   );
-} 
+}
