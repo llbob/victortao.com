@@ -21,7 +21,7 @@ export default function BlogPage({ data }: PageProps<Blog>) {
 
   return (
     <MainLayout>
-      <div class="max-w-4xl">
+      <div class="max-w-4xl mx-auto my-4 md:my-8 md:px-8">
         <div class="mb-8">
           {data.headerImageUrl && (
             <div class="flex justify-center">

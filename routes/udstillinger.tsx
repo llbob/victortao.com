@@ -50,7 +50,7 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
 
         {/* Desktop: Horizontal Scroll */}
         <div class="hidden md:block relative">
-          <div class="overflow-x-auto scrollbar-hide">
+          <div class="mx-auto my-4 md:my-8 md:px-8 overflow-x-auto scrollbar-hide">
             <div class="flex space-x-8 pb-8">
               {data.map((project) => (
                 <div

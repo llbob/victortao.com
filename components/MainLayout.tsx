@@ -41,7 +41,7 @@ export function MainLayout({ children }: { children: JSX.Element }) {
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-6 gap-8">
             <div class="hidden md:block">
               <Navigation />
             </div>

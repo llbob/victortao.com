@@ -16,8 +16,8 @@ export const handler: Handlers<Index> = {
 export default function Home({ data }: PageProps<Index>) {
   return (
     <MainLayout>
-      <div class="max-w-4xl">
-        <div class="flex flex-col md:flex-row gap-4">
+      <div class="max-w-4xl mx-auto my-4 md:my-8 md:px-8">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8">
           {/* <h1 class="title">{data.title}</h1> */}
           <div className="w-full md:w-1/2 flex items-center">
             <div class="message" dangerouslySetInnerHTML={{ __html: data.message }} />
