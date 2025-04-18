@@ -65,12 +65,12 @@ export default {
             '79.5%, 100%': { opacity: 0 },
           },
           textScroll: {
-            '0%': { transform: 'rotate(2deg)' },
+            '0%': { transform: 'rotate(1deg)' },
             '20%': { transform: 'translateX(0%)' },
-            '40%': { transform: 'rotate(-2deg)' },
+            '40%': { transform: 'rotate(-1deg)' },
             '60%': { transform: 'translateX(0%)' },
-            '80%': { transform: 'rotate(2deg)' },
-            '100%': { transform: 'translateX(-100%), rotate(-3deg)' }
+            '80%': { transform: 'rotate(1deg)' },
+            '100%': { transform: 'translateX(-100%), rotate(-1deg)' }
           },
         },
         animation: {

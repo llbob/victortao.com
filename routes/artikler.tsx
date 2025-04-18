@@ -61,8 +61,8 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                     </span>
                   </p>
                   <p class="text-xl font-serif">
-                    <span class="relative overflow-hidden inline-block">
-                      <a href={`/artikler/${article.slug}`} class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</a>
+                    <span class="relative block">
+                      <a href={`/artikler/${article.slug}`} class="inline-block break-words hover:text-pink group-hover:animate-text-scroll lg:whitespace-nowrap">{article.title}</a>
                     </span>
                   </p>
                 </a>
@@ -102,8 +102,8 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                     </span>
                   </p>
                   <p class="text-xl font-serif">
-                    <span class="relative overflow-hidden inline-block">
-                      <a href={`/artikler/${article.slug}`} class="whitespace-nowrap inline-block group-hover:animate-text-scroll">{article.title}</a>
+                    <span class="relative block">
+                      <a href={`/artikler/${article.slug}`} class="inline-block break-words hover:text-pink group-hover:animate-text-scroll lg:whitespace-nowrap">{article.title}</a>
                     </span>
                   </p>
                 </a>
