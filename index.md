@@ -1,10 +1,19 @@
 ---
 title: Lorem ipsum dolor sit amet
 imageUrl: /assets/placeholder/image11.jpg
-message: <p><strong>Skribent og foredragsholder.</strong></p><p>Kritiker og
-  journalist ved ... <strong>placeholder</strong></p><p>Moderator og
-  interviewer. ...</p><p><strong>Baggrund</strong></p><p>f. 19xx, bosat i
-  Kebenhavn.</p><p>Cand.mag i ...</p><p>kandidatstudier i...</p><p>Tilknyttet
-  <strong>placeholder</strong> fra 20xx..</p>
+message: '<p>I am a curator, exhibition builder, cultural entrepreneur and
+  activist based in Copenhagen.</p><p style="text-align: justify">&nbsp;</p><p
+  style="text-align: justify">My experience is primarily fixated in own and
+  collective projects, but I have in periods worked with and for art
+  institutions.</p><p style="text-align: justify">&nbsp;</p><p
+  style="text-align: justify">My curatorial interests are primarily audience
+  activation through disruptive exhibition design, the interplay between
+  architecture, space and art, textual mediation, public exhibition spaces,
+  experience design, exhibition events and performances and community building
+  through artistic intervention.</p><p style="text-align: justify">&nbsp;</p><p
+  style="text-align: justify">I am open to work on any kind of project and in
+  many different fields if the chemistry is good.</p><p style="text-align:
+  justify">&nbsp;</p><p style="text-align: justify">Check my past work for
+  references.</p>'
 ---
-<p>Etiam sit amet nibh ut odio vestibulum tristique ut cursus elit. Nam laoreet non mi id iaculis. Donec molestie posuere luctus. Sed a metus at dui condimentum blandit. Ut ornare vitae ipsum tincidunt blandit. Mauris vel hendrerit elit, ut vestibulum lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec iaculis risus lorem. Nulla vulputate justo in lectus tempus malesuada quis ut lorem. Fusce neque lorem, condimentum ut tellus id, imperdiet imperdiet erat.</p>
+<p></p>
