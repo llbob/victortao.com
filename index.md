@@ -1,19 +1,16 @@
 ---
 title: Lorem ipsum dolor sit amet
 imageUrl: /assets/Screenshot_20220921_154304_com.google.android.apps.photos.jpg
-message: '<p>I am a curator, exhibition builder, cultural entrepreneur and
-  activist based in Copenhagen.</p><p style="text-align: justify">&nbsp;</p><p
-  style="text-align: justify">My experience is primarily fixated in own and
-  collective projects, but I have in periods worked with and for art
-  institutions.</p><p style="text-align: justify">&nbsp;</p><p
-  style="text-align: justify">My curatorial interests are primarily audience
-  activation through disruptive exhibition design, the interplay between
-  architecture, space and art, textual mediation, public exhibition spaces,
-  experience design, exhibition events and performances and community building
-  through artistic intervention.</p><p style="text-align: justify">&nbsp;</p><p
-  style="text-align: justify">I am open to work on any kind of project and in
-  many different fields if the chemistry is good.</p><p style="text-align:
-  justify">&nbsp;</p><p style="text-align: justify">Check my past work for
-  references.</p>'
+message: <p>Jeg er kurator, udstillingsbygger, kulturentreprenør og aktivist med
+  base i København.</p><p></p><p>Min erfaring er primært knyttet til egne og
+  kollektive projekter, men jeg har i perioder arbejdet med og for navngivne
+  kulturinstitutioner som Overgaden og Kunsthal n.</p><p></p><p>Mine kuratoriske
+  interesser er primært publikumsaktivering gennem forstyrrende
+  udstillingsdesign, samspillet mellem arkitektur, rum og kunst,
+  tekstformidling, offentlige udstillingsrum, oplevelsesdesign,
+  udstillingsevents og performances samt community building gennem kunstnerisk
+  intervention.</p><p></p><p>Jeg er åben for at arbejde på alle slags projekter
+  og inden for mange forskellige områder, såfremt der er god
+  kemi.</p><p></p><p>Tjek mit tidligere arbejde for referencer.</p>
 ---
 <p></p>
