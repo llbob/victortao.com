@@ -23,6 +23,7 @@ sections:
       - "2019: Erasmusophold på Technische Universität Berlin"
   - title: Arbejdserfaring
     items:
+      - "2025: Projektmedarbejder ved Applaus"
       - |
         2025: Senior salgsmanager ved Mystery Makers
       - "2024-2025: Underviser og vært ved Kunsthal n"
