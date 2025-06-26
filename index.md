@@ -2,7 +2,7 @@
 title: Lorem ipsum dolor sit amet
 imageUrl: /assets/Screenshot_20220921_154304_com.google.android.apps.photos.jpg
 message: <p>Jeg er kurator, udstillingsbygger, kulturentreprenør og aktivist med
-  base i København.</p><p></p><p>Min erfaring er primært knyttet til egne og
+  base i København.<br><br><br><br>Min erfaring er primært knyttet til egne og
   kollektive projekter, men jeg har i perioder arbejdet med og for navngivne
   kulturinstitutioner som Overgaden og Kunsthal n.</p><p></p><p>Mine kuratoriske
   interesser er primært publikumsaktivering gennem forstyrrende
