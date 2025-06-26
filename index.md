@@ -1,6 +1,6 @@
 ---
 title: Lorem ipsum dolor sit amet
-imageUrl: /assets/placeholder/image11.jpg
+imageUrl: /assets/Screenshot_20220921_154304_com.google.android.apps.photos.jpg
 message: '<p>I am a curator, exhibition builder, cultural entrepreneur and
   activist based in Copenhagen.</p><p style="text-align: justify">&nbsp;</p><p
   style="text-align: justify">My experience is primarily fixated in own and
