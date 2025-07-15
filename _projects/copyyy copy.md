@@ -1,6 +1,6 @@
 ---
 slug: Need-for-street-2022
-title: Lorem Ipsum Dolor Quisque Deux dd
+title: Need for Street
 year: 2022
 headerImageUrl: /assets/_SDI7828 – mellem.jpeg
 carouselImages:
