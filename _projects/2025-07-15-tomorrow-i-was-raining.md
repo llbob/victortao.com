@@ -1,5 +1,5 @@
 ---
-slug: Tomorrow-i-was-raining-2024
+slug: tomorrow-i-was-raining-2024
 title: Tomorrow, I was Raining
 year: 2024
 headerImageUrl: /assets/IMG_20240104_154122 – mellem.jpeg
