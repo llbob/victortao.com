@@ -3,7 +3,5 @@ slug: fragments-of-a-dream-2023
 title: Fragments of a Dream
 year: 2023
 headerImageUrl: /assets/IMG_20231111_171556 – mellem.jpeg
-carouselImages:
-  - url: /assets/IMG_20231111_171556 – mellem.jpeg
 ---
 <p>“Fragments of a Dream” var en soloudstilling i kulturhuset Ny lille klub med billedkunstneren Silas Wirén. Silas kom til os med sine malerier, tryk, keramik og skulpturer samt en idé om at udstille det i Ny lille klubs DIY-rammer.<br><br>Ny lille klub er et tidligere motorcykelværksted og klubhus, der blev ombygget til et kulturhus, hvor vi holdte koncerter, talks, udstillinger, fester og fællesspisninger. Stedets rå og DIY-prægede æstetik viste sig at være en spændende ramme for at kuratere en kunstudstilling. Vi valgte at arrangere værkerne meget aktivt og teatralsk og spille på arkitekturens og omgivelsernes forstyrrelser ved at hænge malerierne midt i rummene med teaterlys på, hvilket tvang publikum til at bevæge sig aktivt rundt for at opleve værkerne fuldt ud.<br><br>Samtidig skabte to af vores interne lydkunstnere, Leo Sakharov og Tristan Wielemann, et lydlandskab til udstillingen, baseret på optagelser fra stedet, som blev aktiveret af publikums bevægelser i rummet.<br><br>“Fragments of a Dream” var åben fra 2. november til 16. november 2023 i Ny lille klub, København.</p>
