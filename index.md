@@ -13,7 +13,7 @@ message: <p>Jeg er kurator, udstillingsbygger, skribent, publikumsudvikler og
   arkitektur, musik, natteliv, kulturpolitik og byudvikling, og er udgivet i
   både dansk- og engelsksproget medier som Politiken, Kulturmonitor, Atlas
   Magasin, Passive/Aggressive, NXT Magazine, Loophole Magazine og
-  Byrummonitor.<br><br>Hyr mig som konsulent, producent eller til
+  Byrummonitor.<br><br>Hyr mig som kurator, konsulent, producent eller til
   formidlingsbaserede opgaver!</p>
 ---
 <p></p>
