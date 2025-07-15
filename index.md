@@ -9,12 +9,11 @@ message: <p>Jeg er kurator, udstillingsbygger, skribent, publikumsudvikler og
   udstillingsdesign, samspillet mellem arkitektur, rum og kunst,
   tekstformidling, offentlige udstillingsrum, oplevelsesdesign,
   udstillingsevents og performances samt community building gennem kunstnerisk
-  intervention.<br><br>Jeg skriver primært om emner indenfor billedkunst,
+  intervention.<br><br>Jeg skriver hovedsageligt om emner indenfor billedkunst,
   arkitektur, musik, natteliv, kulturpolitik og byudvikling, og er udgivet i
   både dansk- og engelsksproget medier som Politiken, Kulturmonitor, Atlas
   Magasin, Passive/Aggressive, NXT Magazine, Loophole Magazine og
   Byrummonitor.<br><br>Jeg er åben for at arbejde på alle slags projekter og
-  inden for mange forskellige områder, såfremt der er god kemi.<br><br>Tjek mit
-  tidligere arbejde for referencer.</p>
+  inden for mange forskellige områder, såfremt der er god kemi.<br></p>
 ---
 <p></p>
