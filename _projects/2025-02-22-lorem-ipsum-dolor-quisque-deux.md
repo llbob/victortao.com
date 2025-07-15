@@ -1,7 +1,8 @@
 ---
-slug: Plastic
+slug: Plastic-2021
 title: Plastic
 year: 2021
+headerImageUrl: /assets/_OSP2052 – mellem.jpeg
 carouselImages:
   - url: /assets/_OSP2052 – mellem.jpeg
 ---
