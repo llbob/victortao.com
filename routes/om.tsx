@@ -17,7 +17,7 @@ export default function CV({ data }: PageProps<CV>) {
   return (
     <MainLayout>
       <div class="">
-        <div class="max-w-4xl mx-auto my-4 md:my-8 md:px-8">
+        <div class="max-w-4xl mx-auto md:px-8">
           {data.sections.map((section, index) => (
             <div key={index} class="mb-6">
               <p class="text-xl font-serif mb-2">{section.title}</p>

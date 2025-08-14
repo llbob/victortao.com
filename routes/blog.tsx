@@ -14,14 +14,14 @@ export default function BlogsPage({ data }: PageProps<Blog[]>) {
   if (!data || data.length === 0) {
     return (
       <MainLayout>
-        <p>No blog posts found.</p>
+        <p>Ingen blog posts fundet.</p>
       </MainLayout>
     );
   }
 
   return (
     <MainLayout>
-      <div class="max-w-4xl mx-auto my-4 md:my-8 md:px-8">
+      <div class="max-w-4xl mx-auto md:px-8">
         <div class="grid grid-cols-1 gap-8">
           {data.map((blog) => (
             <div class="mb-8 group" key={blog.id}>

@@ -14,19 +14,19 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
   if (!data || data.length === 0) {
     return (
       <MainLayout>
-        <p>No cultural projects found.</p>
+        <p>Ingen kulturprojekter fundet.</p>
       </MainLayout>
     );
   }
 
   return (
     <MainLayout>
-      <div class="max-w-4xl mx-auto my-4 md:my-8 md:px-8">
+      <div class="max-w-4xl mx-auto md:px-8">
         <div class="grid grid-cols-1 gap-8">
           {data.map((project) => (
             <div class="mb-8 group" key={project.id}>
               {project.externalUrl ? (
-                <a href={project.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-green-800 block">
+                <a href={project.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-hotPink block">
                   {project.headerImageUrl && (
                     <img
                       class="w-full h-auto min-h-[400px] object-cover mt-2"
@@ -43,7 +43,7 @@ export default function CultProjectsPage({ data }: PageProps<CultProject[]>) {
 
                 </a>
               ) : (
-                <a href={`/kulturprojekter/${project.slug}`} class="hover:text-green-800 block">
+                <a href={`/kulturprojekter/${project.slug}`} class="hover:text-hotPink block">
                   {project.headerImageUrl && (
                     <img
                       class="w-full h-auto min-h-[400px] object-cover mt-2"

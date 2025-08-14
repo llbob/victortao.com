@@ -24,7 +24,7 @@ export default function ContactPage({ data }: PageProps<ContactPageData>) {
   if (!contact) {
     return (
       <MainLayout>
-        <p class="text-lg text-gray-600">Contact information not found.</p>
+        <p class="text-lg text-gray-600">Ingen kontaktinformation.</p>
       </MainLayout>
     );
   }

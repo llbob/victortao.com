@@ -14,19 +14,19 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
   if (!data || data.length === 0) {
     return (
       <MainLayout>
-        <p>No articles found.</p>
+        <p>Ingen artikler fundet.</p>
       </MainLayout>
     );
   }
 
   return (
     <MainLayout>
-      <div class="max-w-4xl mx-auto my-4 md:my-8 md:px-8">
+      <div class="max-w-4xl mx-auto md:px-8">
         <div class="grid grid-cols-1 gap-8">
           {data.map((article) => (
             <div class="mb-8 group" key={article.id}>
               {article.externalUrl ? (
-                <a href={article.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-pink block">
+                <a href={article.externalUrl} target="_blank" rel="noopener noreferrer" class="hover:text-tiffanyBlue block">
                   {article.headerImageUrl && (
                     <img
                       class="w-full h-auto min-h-[400px] object-cover mt-2"
@@ -43,7 +43,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                             href={article.platformUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="hover:text-pink"
+                            class="hover:text-tiffanyBlue"
                           >
                             {article.platform}
                           </a>
@@ -62,12 +62,12 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                   </p>
                   <p class="text-xl font-serif">
                     <span class="relative block">
-                      <a href={`/artikler/${article.slug}`} class="inline-block break-words hover:text-pink group-hover:animate-text-scroll lg:whitespace-nowrap">{article.title}</a>
+                      <a href={article.externalUrl}class="inline-block break-words hover:text-tiffanyBlue group-hover:animate-text-scroll lg:whitespace-nowrap">{article.title}</a>
                     </span>
                   </p>
                 </a>
               ) : (
-                <a href={`/artikler/${article.slug}`} class="hover:text-pink block">
+                <a href={`/artikler/${article.slug}`} class="hover:text-tiffanyBlue block">
                   {article.headerImageUrl && (
                     <img
                       class="w-full h-auto min-h-[400px] object-cover mt-2"
@@ -84,7 +84,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                             href={article.platformUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="hover:text-pink"
+                            class="hover:text-tiffanyBlue"
                           >
                             {article.platform}
                           </a>
@@ -103,7 +103,7 @@ export default function ArticlesPage({ data }: PageProps<Article[]>) {
                   </p>
                   <p class="text-xl font-serif">
                     <span class="relative block">
-                      <a href={`/artikler/${article.slug}`} class="inline-block break-words hover:text-pink group-hover:animate-text-scroll lg:whitespace-nowrap">{article.title}</a>
+                      <a href={`/artikler/${article.slug}`} class="inline-block break-words hover:text-tiffanyBlue group-hover:animate-text-scroll lg:whitespace-nowrap">{article.title}</a>
                     </span>
                   </p>
                 </a>

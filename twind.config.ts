@@ -4,6 +4,7 @@ import { Configuration } from "twind";
 export default {
   ...({
     theme: {
+      
       extend: {
         fontFamily: {
           serif: ['Montaga', 'serif'],
@@ -14,8 +15,16 @@ export default {
           activeColor: '#000',
           white: '#EEE',
           pink: 'rgb(147, 123, 151)',
+          tiffanyBlue: '#1ad6cc',
+          hotPink: '#eb3298',
+          neonGreen: '#31ed31',
+          mimosa: '#f5dc16',
         },
         keyframes: {
+          wiggle: {
+            '0%, 100%': { transform: 'rotate(-3deg)' },
+            '50%': { transform: 'rotate(3deg)' },
+          },
           bounceAround: {
             '0%, 30%, 100%': { transform: 'translateX(0) rotate(0deg)' },
             '58%': { transform: 'translateX(-10px) rotate(-6deg)' },
@@ -97,7 +106,7 @@ export default {
     },
     plugins: {
       'link': 'text-activeColor hover:underline',
-      'menu-link': 'text-lg hover:text-pink scale-105',
+      'menu-link': 'text-lg hover:text-hotPink hover:text-xl',
       'index-image': 'h-[80vh] w-full object-cover mb-2',
       'scrollbar-hide': {
         '-ms-overflow-style': 'none',

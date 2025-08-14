@@ -14,14 +14,14 @@ export default function ArticlePage({ data }: PageProps<Article>) {
   if (!data) {
     return (
       <MainLayout>
-        <p>Article not found.</p>
+        <p>Artikel ikke fundet.</p>
       </MainLayout>
     );
   }
 
   return (
     <MainLayout>
-      <div class="max-w-4xl mx-auto my-4 md:my-8 md:px-8">
+      <div class="max-w-4xl mx-auto md:px-8">
         <div class="mb-8">
           <p class="text-sm font-serif italic">Artikel</p>
           <p class="text-md font-serif italic">

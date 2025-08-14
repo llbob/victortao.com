@@ -17,9 +17,9 @@ export default function PressPage({ data }: PageProps<Press>) {
   return (
     <MainLayout>
       <div class="">
-        <div class="max-w-4xl mx-auto my-4 md:my-8 md:px-8">
+        <div class="max-w-4xl mx-auto md:px-8">
           {data.items.map((item, index) => (
-            <p key={index}>
+            <p className="mb-4" key={index}>
               <span class="text-sm font-serif block">
               {new Date(item.articleDate || '').toLocaleDateString('no', {
                 day: '2-digit',

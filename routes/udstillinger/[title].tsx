@@ -15,14 +15,14 @@ export default function ProjectPage({ data }: PageProps<Project>) {
   if (!data) {
     return (
       <MainLayout>
-        <p>Project not found.</p>
+        <p>Udstilling ikke fundet.</p>
       </MainLayout>
     );
   }
 
   return (
     <MainLayout>
-      <div class="max-w-4xl mx-auto my-4 md:my-8 md:px-8">
+      <div class="max-w-4xl mx-auto md:px-8">
         <div class="flex justify-center">
           <img src={data.headerImageUrl} alt={data.title} class="w-full h-auto max-h-96 w-auto mb-4" />
         </div>
