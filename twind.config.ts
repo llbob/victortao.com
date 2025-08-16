@@ -7,7 +7,7 @@ export default {
       
       extend: {
         fontFamily: {
-          serif: ['Montaga', 'serif'],
+          serif: ['Object Sans', 'serif'],
           fa: ['FA CPNWJSUOMXE', 'sans-serif'],
         },
         colors: {
@@ -83,6 +83,7 @@ export default {
           },
         },
         animation: {
+          'wiggle': 'wiggle 0.5s ease-in-out',
           'bounce-around': 'bounceAround 12s ease-in-out infinite',
           'name-change': 'nameChange 12s ease-in-out infinite',
           'name-change-delay': 'nameChangeDelay 12s ease-in-out infinite',
@@ -106,7 +107,7 @@ export default {
     },
     plugins: {
       'link': 'text-activeColor hover:underline',
-      'menu-link': 'text-lg hover:text-hotPink hover:text-xl',
+      'menu-link': 'text-lg hover:text-hotPink hover:text-xl hover:animate-wiggle',
       'index-image': 'h-[80vh] w-full object-cover mb-2',
       'scrollbar-hide': {
         '-ms-overflow-style': 'none',

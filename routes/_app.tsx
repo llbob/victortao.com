@@ -21,8 +21,8 @@ export default function App({ Component }: PageProps) {
               font-display: swap;
             }
               @font-face {
-              font-family: 'Montaga';
-              src: url('/fonts/Montaga/Montaga-Regular.woff') format('woff');
+              font-family: 'Object Sans';
+              src: url('/fonts/object_sans/ObjectSans-Regular.woff') format('woff');
               font-weight: 400;
               font-style: normal;
               font-display: swap;
