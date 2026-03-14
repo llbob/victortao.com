@@ -1,6 +1,6 @@
 ---
 title: Lorem ipsum dolor sit amet
-imageUrl: /assets/Screenshot_20220921_154304_com.google.android.apps.photos.jpg
+imageUrl: /assets/Skærmbillede 2024-09-19 kl. 14.19.05.jpg
 message: <p>Jeg er kurator, udstillingsbygger, skribent, publikumsudvikler og
   kulturel iværksætter med base i København.<br><br>Min erfaring er primært
   knyttet til egne og kollektive projekter, men jeg har i perioder arbejdet med
