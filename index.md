@@ -9,12 +9,12 @@ message: <p>Jeg er kurator, udstillingsbygger, skribent, publikumsudvikler og
   publikumsudvikling, Applaus.<br><br>Mine kuratoriske interesser dækker
   publikumsaktivering gennem forstyrrende udstillingsdesign, samspillet mellem
   arkitektur, rum og kunst, tekstformidling, offentlige udstillingsrum,
-  oplevelsesdesign, udstillingsevents og performances samt community building
-  gennem kunstnerisk intervention.<br><br>Jeg skriver hovedsageligt om emner
-  indenfor billedkunst, arkitektur, musik, natteliv, kulturpolitik og
-  byudvikling, og er udgivet i både dansk- og engelsksproget medier som
-  Politiken, Kulturmonitor, Atlas Magasin, Passive/Aggressive, NXT Magazine,
-  Loophole Magazine og Byrummonitor.<br><br>Hyr mig som kurator, konsulent,
-  producent eller til formidlingsbaserede opgaver!</p>
+  oplevelsesdesign, udstillingsevents og performances. Og så er jeg særligt
+  drevet af at skabe og arbejde med stærke fællesskaber.<br><br>Jeg skriver
+  hovedsageligt om emner indenfor billedkunst, arkitektur, musik, natteliv,
+  kulturpolitik og byudvikling, og er udgivet i både dansk- og engelsksproget
+  medier som Politiken, Kulturmonitor, Atlas Magasin, Passive/Aggressive, NXT
+  Magazine, Loophole Magazine og Byrummonitor.<br><br>Hyr mig som kurator,
+  konsulent, producent eller til formidlingsbaserede opgaver!</p>
 ---
 <p></p>
