@@ -1,6 +1,6 @@
 ---
 slug: laeseliste-forår-2026
-title: Læsteliste forår 2026
+title: Læseliste forår 2026
 date: 2026-05-26
 headerImageUrl: /assets/20250605_1352382.jpg
 ---
