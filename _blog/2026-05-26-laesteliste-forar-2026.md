@@ -1,0 +1,6 @@
+---
+slug: laeseliste-forår-2026
+title: Læsteliste forår 2026
+date: 2026-05-26
+---
+<p>Bogna Konior - Dark Forest Theory of the Internet<br>Maya Kronic - Cute accelerationism <br>Rem Koolhass - Junkspace<br>Daniel Felstead / Jenn Leung - Welcome to jankspace, babes? <br>Karen Hao - Empires of AI<br>Machine Decision is Not Final: China and the History and Future of Artificial Intelligence<br>Benjamin Bratton - The tack<br>Mckenzie Wark - raving <br>Mckenzie Wark - a hacker manifesto<br>Silvia Federici - Re-enchanting the World<br>Marek poliks &amp; roberto alonso trillo - exocapitalism <br>Byung-Chul Han - psychopolitics<br>Byung-Chul Han - om ritualerne forsvinden<br>Mark Fisher - capitalist realism<br>Nick Land - fanged nuomena<br>Martin Heidegger - Spørgsmålet til teknikken <br>D&amp;G - anti-ødipus<br>Hardt &amp; Negri - imperiet<br>Reza Negarestani - Accelerate<br>Reza Negarestani - Labor of the Inhuman<br>Meltdown your books! - where does a body begin?<br>Christian Nirvana Damato - Retrograde Prometheus<br>Mckenzie Wark- Capital is Dead<br>Neil postman - Amusing ourselves to death<br>Alexander Galloway et al - Digital theory<br>Evgeny morosov - AI futures<br>Kjeld Erik Brødsgaard &amp; Anne-Mette Barfod - Xi Jinpings Kina<br>Vatikanet - Quo Vadis, Humanitas?</p>
